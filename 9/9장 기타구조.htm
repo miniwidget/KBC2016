@@ -1,0 +1,1459 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+<META NAME="Generator" CONTENT="Haansoft HWP 8.0.0.466">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<TITLE></TITLE>
+<STYLE>
+<!--
+P.HStyle0, LI.HStyle0, DIV.HStyle0
+	{style-name:"바탕글"; margin-left:15.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle1, LI.HStyle1, DIV.HStyle1
+	{style-name:"본문"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle2, LI.HStyle2, DIV.HStyle2
+	{style-name:"개요 1"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; background-color:#315f97; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#e5e5e5;}
+P.HStyle3, LI.HStyle3, DIV.HStyle3
+	{style-name:"개요 2"; margin-left:5.0pt; margin-right:0.0pt; margin-top:10.0pt; margin-bottom:10.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"bold"; font-style:"normal"; color:#315f97;}
+P.HStyle4, LI.HStyle4, DIV.HStyle4
+	{style-name:"개요 3"; margin-left:10.0pt; margin-right:0.0pt; margin-top:10.0pt; margin-bottom:10.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"bold"; font-style:"normal"; color:#000000;}
+P.HStyle5, LI.HStyle5, DIV.HStyle5
+	{style-name:"개요 4"; margin-left:15.0pt; margin-right:0.0pt; margin-top:5.0pt; margin-bottom:5.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"bold"; font-style:"normal"; color:#000000;}
+-->
+</STYLE>
+</HEAD>
+
+<BODY>
+
+<P CLASS=HStyle2> 0901 막과 케이블 구조</P>
+
+<P CLASS=HStyle3> 0901.1 일반사항</P>
+
+<P CLASS=HStyle4> 0901.1.1 적용범위</P>
+
+<P CLASS=HStyle0>이 조항은 막과 케이블 구조에 관한 설계하중, 재료, 구조해석 및 설계 등에 적용한다.</P>
+
+<P CLASS=HStyle4> 0901.1.2 용어의 정의</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>막구조 </SPAN>: 자중을 포함하는 외력이 쉘구조물의 기본원리인 막응력에 따라서 저항되는 구조물로서, <SPAN STYLE='text-decoration:"underline";'>휨 또는 비틀림에 대한 저항이 작거나 또는 전혀 없는 구조</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>케이블구조 </SPAN>: 휨에 대한 저항이 작은 구조로 <SPAN STYLE='text-decoration:"underline";'>인장응력만</SPAN>을 받을 목적으로 제작 및 시공되는 부재</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>공기막구조 </SPAN>:&nbsp; 공기막 내외부의 압력 차에 따라 막면에 강성을 주어 형태를 안정시켜 구성되는 구조물</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'><BR></SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>초기 인장력 </SPAN>: 연성 막재의 형상을 유지하기 위해 도입하는 초기하중</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>내압 </SPAN>: 공기막구조를 형성하기 위한 내부압력</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>인장크리프 </SPAN>: 지속하중으로 인하여 막재에 일어나는 장기변형</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>인장강도 </SPAN>: 재료가 견딜 수 있는 최대 인장응력</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>인열강도 </SPAN>: 재료가 접힘 또는 굽힘을 받은 후 견딜 수 있는 최대 인장응력</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'><BR></SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>형상해석 </SPAN>: 설계자의 의도와 역학적인 평형조건을 동시에 만족하는 형상을 찾는 일련의 해석과정이며, 막 구조물 및 케이블 구조물과 같은 연성구조물에 적용되는 해석방법</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>막재 </SPAN>: 직포, 코팅재에 따라 구성된 재료. 고무시트 등 구성재가 다른 재료는 고려하지 않음</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>직포 </SPAN>: 섬유실에 따른 직물 또는 망목상 직물</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>코팅재 </SPAN>: 직포의 마찰방지 등을 위하여 직포에 도포하는 재료</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'><BR></SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>열판용착접합 </SPAN>: 판을 눌러 막재의 겹치는 부분을 코팅제 또는 해당 부분에 삽입한 용착필름을 용융하여 막재를 압착하는 접합방식</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>봉제접합 </SPAN>: 접합하고자 하는 막재료의 겹친부분을 다른 막재의 단부와 평행하게 봉제하는 접합방식</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>열풍용착접합 </SPAN>: 열풍에 따라 접합하고자 하는 막재의 겹친 부분의 코팅재를 용융하고 압착하여 접합하는 방식</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-weight:"bold";'>고주파용착접합 </SPAN>: 고주파를 이용하여 막재의 겹친부분의 코팅재를 용융하여 막재를 압착하여 접합하는 방식</P>
+
+<P CLASS=HStyle3> 0901.2 설계하중</P>
+
+<P CLASS=HStyle4> 0901.2.1 하중기준</P>
+
+<P CLASS=HStyle0>이 조항에서 사용하는 설계하중은 제3장(설계하중)에 따른다. 다만, 막구조 및 케이블구조의 형식, 구법, 시공법 등에 따라 특별히 발생하는 하중은 실제 상황을 고려하여 적절히 산정한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.2.2 하중종류</P>
+
+<P CLASS=HStyle0>막구조 및 케이블구조의 구조설계에 적용되는 설계하중은 다음과 같다.</P>
+
+<P CLASS=HStyle0 STYLE='text-align:left;'>(1) 고정하중(<IMG src=".\PICF017.gif" width="12" height="13" vspace="1" hspace="0" border="0">)</P>
+
+<P CLASS=HStyle0 STYLE='text-align:left;'>(2) 활하중(<IMG src=".\PICF037.gif" width="10" height="13" vspace="1" hspace="0" border="0">)</P>
+
+<P CLASS=HStyle0 STYLE='text-align:left;'>(3) 적설하중(<IMG src=".\PICF048.gif" width="9" height="13" vspace="1" hspace="0" border="0">)</P>
+
+<P CLASS=HStyle0 STYLE='text-align:left;'>(4) 풍하중(<IMG src=".\PICF068.gif" width="15" height="13" vspace="1" hspace="0" border="0">)</P>
+
+<P CLASS=HStyle0 STYLE='text-align:left;'>(5) 지진하중(<IMG src=".\PICF079.gif" width="11" height="13" vspace="1" hspace="0" border="0">)</P>
+
+<P CLASS=HStyle0 STYLE='text-align:left;'>(6) 초기 인장력(<IMG src=".\PICF08A.gif" width="14" height="16" vspace="1" hspace="0" border="0">)</P>
+
+<P CLASS=HStyle0 STYLE='text-align:left;'>(7) 내부압력(<IMG src=".\PICF09A.gif" width="14" height="16" vspace="1" hspace="0" border="0">)</P>
+
+<P CLASS=HStyle4> 0901.2.3 하중조합</P>
+
+<P CLASS=HStyle0>막구조 및 케이블구조의 허용응력설계법에 따른 하중조합은 &lt;표0901.2.3&gt;와 같으며 가장 불리한 경우로 설계한다.</P>
+
+<P CLASS=HStyle0 STYLE='margin-left:30.8pt;text-indent:-15.8pt;'>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.2.3&gt; 하중조합</SPAN>
+</P>
+</CAPTION><TR>
+	<TD width="113" height="22" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조형태</SPAN></P>
+	</TD>
+	<TD width="117" height="22" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>하중의 종류</SPAN></P>
+	</TD>
+	<TD width="144" height="22" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>하중조합</SPAN></P>
+	</TD>
+	<TD width="176" height="22" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>비고</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD rowspan="3" width="113" height="72" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>막구조 및 케이블 구조</SPAN></P>
+	</TD>
+	<TD width="117" height="24" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>장기하중</SPAN></P>
+	</TD>
+	<TD width="144" height="24" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'><IMG src=".\PICF09B.gif" width="10" height="12" vspace="0" hspace="0" border="0">＋<IMG src=".\PICF0AC.gif" width="8" height="12" vspace="0" hspace="0" border="0">+<IMG src=".\PICF0BC.gif" width="14" height="16" vspace="1" hspace="0" border="0">(<IMG src=".\PICF0BD.gif" width="14" height="16" vspace="1" hspace="0" border="0">)</SPAN></P>
+	</TD>
+	<TD width="176" height="24" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>(<IMG src=".\PICF0CE.gif" width="14" height="16" vspace="1" hspace="0" border="0">: 공기막구조 내압)</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD rowspan="2" width="117" height="48" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>단기하중</SPAN></P>
+	</TD>
+	<TD width="144" height="24" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'><IMG src=".\PICF0CF.gif" width="10" height="12" vspace="0" hspace="0" border="0">+<IMG src=".\PICF0FF.gif" width="12" height="14" vspace="0" hspace="0" border="0">+<IMG src=".\PICF100.gif" width="14" height="14" vspace="0" hspace="0" border="0">+<IMG src=".\PICF111.gif" width="14" height="16" vspace="1" hspace="0" border="0">(<IMG src=".\PICF112.gif" width="14" height="16" vspace="1" hspace="0" border="0">)</SPAN></P>
+	</TD>
+	<TD width="176" height="24" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>(<IMG src=".\PICF132.gif" width="14" height="16" vspace="1" hspace="0" border="0">: 공기막구조 내압)</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="144" height="24" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'><IMG src=".\PICF133.gif" width="10" height="12" vspace="0" hspace="0" border="0">+<IMG src=".\PICF143.gif" width="12" height="14" vspace="0" hspace="0" border="0">+</SPAN><SPAN STYLE='font-family:"한양중고딕,한컴돋움";color:#ff0000;'><IMG src=".\PICF154.gif" width="17" height="14" vspace="0" hspace="0" border="0"></SPAN><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>+<IMG src=".\PICF155.gif" width="14" height="16" vspace="1" hspace="0" border="0">(<IMG src=".\PICF166.gif" width="14" height="16" vspace="1" hspace="0" border="0">)</SPAN></P>
+	</TD>
+	<TD width="176" height="24" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>(<IMG src=".\PICF176.gif" width="14" height="16" vspace="1" hspace="0" border="0">: 공기막구조 내압)</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD colspan="4" width="550" height="24" valign="middle" style='border-left:none;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'><IMG src=".\PICF187.gif" width="12" height="14" vspace="0" hspace="0" border="0">：고정하중 <IMG src=".\PICF198.gif" width="12" height="14" vspace="0" hspace="0" border="0">：활하중&nbsp; <IMG src=".\PICF199.gif" width="14" height="14" vspace="0" hspace="0" border="0">：적설하중&nbsp; <IMG src=".\PICF1A9.gif" width="16" height="12" vspace="0" hspace="0" border="0">：풍하중&nbsp; <IMG src=".\PICF1BA.gif" width="14" height="16" vspace="1" hspace="0" border="0">：초기장력 <IMG src=".\PICF1BB.gif" width="14" height="16" vspace="1" hspace="0" border="0">：내부압력</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0 STYLE='margin-left:30.8pt;text-indent:-15.8pt;'><BR></P>
+
+<P CLASS=HStyle3> 0901.3 막구조의 재료(막재)</P>
+
+<P CLASS=HStyle4> 0901.3.1 막재의 구성</P>
+
+<P CLASS=HStyle0>기준에서 인정하는 막재는 직포, 코팅재 및 그 외 구성된 재료를 의미한다.</P>
+
+<P CLASS=HStyle0 STYLE='margin-left:30.8pt;text-indent:-15.8pt;'></P>
+
+<P CLASS=HStyle4> 0901.3.2 막재의 강도 및 내구성</P>
+
+<P CLASS=HStyle0>막재의 강도 및 내구성은 &lt;표0901.3.2&gt;에 따른다.</P>
+
+<P CLASS=HStyle0 STYLE='margin-left:30.8pt;text-indent:-15.8pt;'><BR></P>
+
+<P CLASS=HStyle4> 0901.3.3 막재의 분류</P>
+
+<P CLASS=HStyle0>구조내력상 주요한 부분에 사용하는 막재는 다음 각 호에 해당하는 기준에 적합해야한다. </P>
+
+<P CLASS=HStyle0>(1) 막재는 &lt;표0901.3.3(1)&gt;과 같이 직포에 사용하는 섬유실의 종류와 코팅재(직포의 마찰방지 등을 위하여 직포에 도포)에 따라 분류된다. </P>
+
+<P CLASS=HStyle0>(2) 두께는 0.5mm 이상이어야 한다.</P>
+
+<P CLASS=HStyle0>(3) 1㎡ 당 중량은 &lt;표0901.3.3(2)&gt;와 같다. </P>
+
+<P CLASS=HStyle0>(4) 섬유밀도는 일정하여야한다.</P>
+
+<P CLASS=HStyle0>(5) 인장강도는 폭 1cm당 300N 이상 이어야 한다.</P>
+
+<P CLASS=HStyle0>(6) 파단신율은 35% 이하 이어야 한다.</P>
+
+<P CLASS=HStyle0>(7) 인열강도는 100N 이상 또한 인장강도에 1cm를 곱해서 얻은 수치의 15% 이상 이어야 한다.</P>
+
+<P CLASS=HStyle0>(8) 인장크리프에 따른 신장율은 15%(합성섬유 직포로 구성된 막재료에 있어서는 25%) 이하이어야 한다. </P>
+
+<P CLASS=HStyle0>(9) 구조내력상 주요한 부분에서 특히 변질 또는 마찰손실의 위험이 있는 곳에 대해서는 변질 또는 마찰손상에 강한 막재를 사용하거나 변질 또는 마찰손상 방지를 위한 조치를 취한다.</P>
+
+<P CLASS=HStyle0>(10) 막재에 대하여 빛의 반사율과 투과율을 고려한다. </P>
+
+<P CLASS=HStyle0>(11) 구조물의 상황에 따라서 막재의 다양한 특성을 고려하여 재료를 채택한다.</P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.3.2&gt; 막재의 강도 및 내구성</SPAN>
+</P>
+</CAPTION><TR>
+	<TD width="96" height="23" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>인장강도</SPAN></P>
+	</TD>
+	<TD width="361" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;300N/cm 이상</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="96" height="45" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>파단</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>신장률</SPAN></P>
+	</TD>
+	<TD width="361" height="45" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;35% 이하</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="96" height="45" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>인열강도</SPAN></P>
+	</TD>
+	<TD width="361" height="45" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;100N 이상, </SPAN></P>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;인장강도×1cm의 15% 이상</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="96" height="45" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>인장크리프 신장률</SPAN></P>
+	</TD>
+	<TD width="361" height="45" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;15% (합성섬유실에 따른 직포의 막재는 25% 이하)</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="96" height="45" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>변질 및 마모손상</SPAN></P>
+	</TD>
+	<TD width="361" height="45" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='margin-left:19.1pt;text-indent:-4.1pt;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;변질․마모손상에 강한 막재, 또는 변질 혹은 마모손상 방지를 위한 조치를 한 막재</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.3.3(1)&gt; 막재의 분류</SPAN> 
+</P>
+</CAPTION><TR>
+	<TD width="97" height="41" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>막재의 종류</SPAN></P>
+	</TD>
+	<TD width="235" height="41" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>직포</SPAN></P>
+	</TD>
+	<TD width="292" height="41" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.9pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>코팅재</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="97" height="91" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>A종</SPAN></P>
+	</TD>
+	<TD width="235" height="91" valign="top" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>KS L 2507 (직조용 유리실)을 만족하는 단섬유(섬유직경 3.0㎛에서 4.05㎛의 3 (B)로 한정)를 사용한 유리섬유실</SPAN></P>
+	</TD>
+	<TD width="292" height="91" valign="top" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>4불화에틸렌수지,4불화에틸렌-퍼플루오알킬-비닐에테르 공중합수지 또는 4불화에틸렌-6불화프로필렌 공중합수지</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="97" height="126" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>B종</SPAN></P>
+	</TD>
+	<TD width="235" height="126" valign="top" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>KS L 2507 (직조용 유리실)을&nbsp; 만족하는 단섬유를 사용한 유리섬유실</SPAN></P>
+	</TD>
+	<TD width="292" height="126" valign="top" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>염화비닐수지, 폴리우레탄수지, 불소계수지 (4</SPAN><SPAN STYLE='font-family:"한양중고딕,한컴돋움";letter-spacing:0.2pt;'>불화에틸렌수지,4불화에틸렌-퍼플루오알킬-</SPAN><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>비닐에테르 공중합수지 또는 4불화에틸렌-6불화프로필렌 공중합수지를 포함), 클로로프렌고무 또는 클로로슬폰화 폴리에틸렌고무</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="97" height="62" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;C종</SPAN></P>
+	</TD>
+	<TD width="235" height="62" valign="top" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>폴리아미드계, 폴리아라미드계, 폴리에스테르계 또는 폴리비닐알코올계의 합성섬유실</SPAN></P>
+	</TD>
+	<TD width="292" height="62" valign="top" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>염화비닐수지, 폴리우레탄수지, 불소계수지, 클로로프렌고무 또는 클로로슬폰화 폴리에틸렌고무</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.3.3(2)&gt; 막재의 단위중량</SPAN>&nbsp; 
+</P>
+</CAPTION><TR>
+	<TD width="121" height="31" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구성재</SPAN></P>
+	</TD>
+	<TD width="253" height="31" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;막재 A, B종(유리섬유실의 직포)</SPAN></P>
+	</TD>
+	<TD width="253" height="31" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>막재 C종(합성섬유실의 직포)</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="121" height="23" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>막재 중량</SPAN></P>
+	</TD>
+	<TD width="253" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;550gf/㎡ 이상</SPAN></P>
+	</TD>
+	<TD width="253" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;500gf/㎡ 이상</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="121" height="23" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>직포 중량</SPAN></P>
+	</TD>
+	<TD width="253" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;150gf/㎡ 이상</SPAN></P>
+	</TD>
+	<TD width="253" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;100gf/㎡ 이상</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="121" height="23" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>코팅재 중량</SPAN></P>
+	</TD>
+	<TD width="253" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;겉과 안쪽 양면에서 400gf/㎡ 이상</SPAN></P>
+	</TD>
+	<TD width="253" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;겉과 안쪽 양면에서 400gf/㎡ 이상</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.3.4 직포의 구성 및 섬유밀도</P>
+
+<P CLASS=HStyle0>일반직물(직포)이란 제조시의 장력이 걸리지 않은 상태에서 종사와 종사 사이, 횡사와 횡사 사이의 망목 간격이 각각 0.5mm 이하인 것을 말한다. 망목 간격이 0.5mm를 초과하는 것을 망목상직물(직포)로 구별한다. 섬유밀도의 분산에 대한 기준치는 측정된 섬유밀도에 대하여 ±5% 이내여야 한다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.3.5 막재의 두께</P>
+
+<P CLASS=HStyle0>막재 두께의 기준치는 두께 측정기를 이용하여 75mm 이상 간격으로 5개소 이상에 대하여 측정한 값의 평균치로 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0901.4 막재의 강성 및 강도</P>
+
+<P CLASS=HStyle4> 0901.4.1 직물의 휨 강성 측정</P>
+
+<P CLASS=HStyle0>직물의 휨 측정은 KS L ISO 4604에 따라 300mm 이상 간격으로 5개소 이상에 대하여 측정한다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.4.2 인장강도 및 인장신율 측정</P>
+
+<P CLASS=HStyle0>종사방향 및 횡사방향의 인장강도 및 인장신율을 측정하여 품질기준치를 정한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.4.3 인열강도</P>
+
+<P CLASS=HStyle0>종사방향 및 횡사방향의 인열강도를 측정하여 품질기준치를 정한다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.4.4 코팅재 층의 접착강도</P>
+
+<P CLASS=HStyle0>종사방향 및 횡사방향의 코팅재 밀착강도를 측정하여 품질기준치를 정한다. </P>
+
+<P CLASS=HStyle4> 0901.4.5 인장 크리프</P>
+
+<P CLASS=HStyle0>종사방향 및 횡사방향의 인장크리프에 따른 신장률을 측정하여 품질기준치를 정한다. </P>
+
+<P CLASS=HStyle4> 0901.4.6 반복하중을 받는 경우의 인장강도 측정</P>
+
+<P CLASS=HStyle0>반복하중을 받는 경우의 인장강도를 측정하여 품질 기준치를 정한다. 다만 막재의 구성재 및 사용환경 조건에 따라 이 기준치를 요구하지 않는 경우 하지 않아도 된다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.4.7 접힘 인장강도</P>
+
+<P CLASS=HStyle0>막재의 접힘 인장강도는 종사방향 및 횡사방향 각각의 인장강도 평균치가 동일한 로트에 있어 시험 전에 측정된 각 실 방향 인장강도 평균치의 70% 이상이어야 한다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.4.8 내후성</P>
+
+<P CLASS=HStyle0>막재는 외부 폭로에 대해 종사방향 및 횡사방향의 인장강도의 평균치가 막재의 종류에 따라 다음의 수치를 만족하여야한다. </P>
+
+<P CLASS=HStyle0>(1) A종 및 B종：종사 및 횡사방향의 인장강도가 각각 초기인장강도의 70% 이상</P>
+
+<P CLASS=HStyle0>(2) C종：종사 및 횡사방향의 인장강도가 각각 초기인장강도의 80% 이상</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.4.9 습윤시 인장강도</P>
+
+<P CLASS=HStyle0>막재가 습윤상태에 있을 때 종사방향 및 횡사방향의 인장강도 평균치는 각각 초기인장강도의 80%이상 이어야한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.4.10 고온시 인장강도</P>
+
+<P CLASS=HStyle0>막재가 고온상태에 있을 때 종사방향 및 횡사방향의 인장강도 평균치는 각각 초기인장강도의 70%이상 이어야한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.4.11 내흡수성</P>
+
+<P CLASS=HStyle0>막재는 흡수길이의 최대치가 20mm이하 이어야한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0901.5 케이블 재료</P>
+
+<P CLASS=HStyle0>케이블 재료는 KS D 3509(피아노 선재), KS D 3556(피아노 선), KS D 3510(경강선), KS D 3559(경강 선재), KS D 3514(와이어 로프) 및 KS D 7002(PC 강선 및 PC 강연선) 규격에 맞는 선재를 냉간 가공한 소선을 사용함을 원칙으로 하고, 다음 종류를 표준으로 한다.</P>
+
+<P CLASS=HStyle0>(1) 구조용 스트랜드 로프</P>
+
+<P CLASS=HStyle0>(2) 구조용 스파이럴 로프</P>
+
+<P CLASS=HStyle0>(3) 구조용 록 코일 로프</P>
+
+<P CLASS=HStyle0>(4) 구조용 평행선 스트랜드</P>
+
+<P CLASS=HStyle0>(5) 피복 평행선 스트랜드</P>
+
+<P CLASS=HStyle0>(6) PC 강연선</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0901.6 케이블 재료의 성질</P>
+
+<P CLASS=HStyle4> 0901.6.1 파단하중</P>
+
+<P CLASS=HStyle0 STYLE='text-align:left;'>케이블 재료의 파단하중을 구하는 방법은 KS D 3514{와이어 로프}의 기준에 따르도록 한다. 단, PC 강선 및 강연선은 KS D 7002{PC 강선 및 PC 강연선}에 따른다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.6.2 초기신장</P>
+
+<P CLASS=HStyle0>케이블 재료에 대한 프리스트레싱 후의 초기신장의 크기는 &lt;표 0901.6.2&gt;에서 제시된 값을 표준으로 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.6.2&gt; 프리스트레 후의 초기신장</SPAN>
+</P>
+</CAPTION><TR>
+	<TD width="226" height="23" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.7pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>케이블 재료</SPAN></P>
+	</TD>
+	<TD width="128" height="23" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.7pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>초기신장 (％)</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="226" height="23" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조용 스트랜드 로프</SPAN></P>
+	</TD>
+	<TD width="128" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>0.1 - 0.2</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="226" height="44" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조용 스파이럴 로프</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조용 록 코일 로프</SPAN></P>
+	</TD>
+	<TD width="128" height="44" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>0.05 - 0.1</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="226" height="87" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>평행연 스트랜드</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>피복 평행연 스트랜드</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>PC 강연선 (7가닥 꼬임,19가닥 꼬임)</SPAN></P>
+	</TD>
+	<TD width="128" height="87" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>0</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.6.3 탄성계수</P>
+
+<P CLASS=HStyle0>케이블 재료의 탄성계수는 시험결과에 따라 구하는 것을 원칙으로 한다. 시험을 하지 않은 경우, 케이블 재료의 프리스트레싱 후의 탄성계수는 &lt;표0901.6.3&gt;의 값으로 가정할 수 있다. </P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.6.3&gt; 프리스트레싱 후의 탄성계수</SPAN> 
+</P>
+</CAPTION><TR>
+	<TD width="218" height="24" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>케이블 재료</SPAN></P>
+	</TD>
+	<TD width="139" height="24" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>탄성계수(<IMG src=".\PICF1DB.gif" width="42" height="14" vspace="1" hspace="0" border="0">)</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="218" height="23" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조용 스트랜드 로프</SPAN></P>
+	</TD>
+	<TD width="139" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>140,000</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="218" height="44" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조용 스파이럴 로프</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조용 록 코일 로프</SPAN></P>
+	</TD>
+	<TD width="139" height="44" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>160,000</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="218" height="44" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>평행연 스트랜드</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>피복 평행연 스트랜드</SPAN></P>
+	</TD>
+	<TD width="139" height="44" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>200,000</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="218" height="44" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.9pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>PC 강연선 (7 가닥 꼬임,19 가닥 꼬임)</SPAN></P>
+	</TD>
+	<TD width="139" height="44" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.9pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>190,000</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.6.4 크리프</P>
+
+<P CLASS=HStyle0>케이블 재료의 크리프 변형은 &lt;표0901.6.4&gt;에서 제시된 값을 표준으로 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.6.4&gt; 케이블 재료의 크리프 변형도 </SPAN>
+</P>
+</CAPTION><TR>
+	<TD width="181" height="87" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.7pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>케이블 재료</SPAN></P>
+	</TD>
+	<TD width="66" height="87" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.7pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>크리프 변형도(％)</SPAN></P>
+	</TD>
+	<TD width="243" height="87" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.7pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>응력 수준</SPAN><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'><SUP></SUP></SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="181" height="23" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조용 스트랜드 로프</SPAN></P>
+	</TD>
+	<TD width="66" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>0.025</SPAN></P>
+	</TD>
+	<TD rowspan="3" width="243" height="133" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>장기 허용인장응력 이하</SPAN></P>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;</SPAN></P>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>단기 허용인장응력은 장기의</SPAN></P>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>1.33배로 한다.</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="181" height="44" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조용 스파이럴 로프</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구조용 록 코일 로프</SPAN></P>
+	</TD>
+	<TD width="66" height="44" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>0.015</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="181" height="66" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>평행연 스트랜드</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>피복 평행연 스트랜드</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>PC 강연선 </SPAN></P>
+	</TD>
+	<TD width="66" height="66" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>0.007</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0 STYLE='margin-top:3.0pt;text-align:left;'>&nbsp;</P>
+
+<P CLASS=HStyle4> 0901.6.5 선팽창 계수</P>
+
+<P CLASS=HStyle0>케이블 재료의 선팽창 계수는 <IMG src=".\PICF1EC.gif" width="77" height="14" vspace="1" hspace="0" border="0">를 기준으로 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0901.7 막구조의 해석</P>
+
+<P CLASS=HStyle4> 0901.7.1 막구조의 해석순서</P>
+
+<P CLASS=HStyle0>막구조의 해석은 형상해석, 응력-변형도해석, 재단도해석 순서로 이루어진다. 만약 필요하다면 시공해석도 수행하여야한다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.7.2 막구조의 해석방법</P>
+
+<P CLASS=HStyle0>막구조의 구조해석에는 유한요소법, 동적이완법, 그리고 내력밀도법 등이 있다. 막구조의 해석에서 기하학적 비선형을 고려하여야한다. 재료 비선형은 무시될 수 있지만 일반적으로 재료이방성은 고려하여 해석을 수행한다.&nbsp; </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.7.3 형상해석</P>
+
+<P CLASS=HStyle0>막구조에 있어서 케이블재와 막재의 초기장력 값은 막구조 형식, 하중, 변형, 시공 및 기타 요인들을 고려하여 결정한다. 막재에 도입하는 초기장력은 &lt;표0901.7.3&gt; 값을 표준으로 한다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.7.3&gt; 초기장력 값 </SPAN>
+</P>
+</CAPTION><TR>
+	<TD width="148" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>막재의 종류</SPAN></P>
+	</TD>
+	<TD width="148" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>초기장력</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="148" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>A, B 종</SPAN></P>
+	</TD>
+	<TD width="148" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>2kN/m 이상</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="148" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>C 종 </SPAN></P>
+	</TD>
+	<TD width="148" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>1kN/m 이상</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.7.4 응력-변형도 해석</P>
+
+<P CLASS=HStyle0>막구조의 응력-변형도 해석은 형상해석에서 결정된 초기장력과 기하학적 형상을 바탕으로 하며, 주어진 하중조합에 따라서 발생되는 막구조의 응력과 변형을 고려한다. 응력-변형도해석에 따른 결과가 형상 및 재료의 역학적 요구를 만족하지 않는 경우에는 형상해석을 다시 수행하여야한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.7.5 재단도 해석</P>
+
+<P CLASS=HStyle0>재단도 해석법에는 지오데식 라인법, 플랫트닝법 등이 있으며 커팅 라인을 결정하는 데 사용된다. 재단선의 외관, 막재의 폭을 고려한 효율적인 사용, 막의 직교이방성 등에 유의하여 재단선을 정한다. 재단도해석에서 초기장력과 막의 크리프 특성을 주의하여야한다. 각각의 막 스트립의 수축 값에 따라 재단의 크기가 수정될 수 있기 때문에 막 특성에 근거하여 면밀히 확인하여야한다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.7.6 공기막구조 해석</P>
+
+<P CLASS=HStyle0>공기막구조에 대해서 최대 내부압, 최소 내부압, 상시 내부압이 합리적으로 보장하여야한다. 최대 내부압은 심각한 구조변경에서도 최악의 상태가 발생하지 않도록 설정하여야한다. 최소 내부압은 정상적인 기후와 서비스 상태에서 구조 안전성을 확보하기 위한 것으로 일반적으로 200<IMG src=".\PICF1FC.gif" width="31" height="14" vspace="1" hspace="0" border="0">이상 이어야한다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0901.8 막구조의 구조설계 </P>
+
+<P CLASS=HStyle4> 0901.8.1 구조설계 고려사항</P>
+
+<P CLASS=HStyle0>막재에 대한 설계는 허용응력설계법을 준용하며 그 이외의 부재에 대해서는 허용응력설계법과 동등 이상의 구조설계법을 이용하여 막구조 또는 그 외의 구조를 병용한 건축물의 안전을 확인할 수 있는 구조계산이 이루어져야한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.8.2 변위제한</P>
+
+<P CLASS=HStyle0>막구조에 작용하는 하중 및 외력에 따른 변형은 비교적 크고 또한 바람에 따른 막면의 강제진동이 생길 수 있으므로 &lt;표0901.8.2&gt;와 같은 최대변위에 대한 제한규정을 적용한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.8.2&gt; 막재의 변위제한 </SPAN>
+</P>
+</CAPTION><TR>
+	<TD rowspan="2" width="141" height="89" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>막면의&nbsp;</SPAN></P>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>지점간 거리</SPAN></P>
+	</TD>
+	<TD rowspan="2" width="166" height="89" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>하 중</SPAN></P>
+	</TD>
+	<TD colspan="2" width="339" height="23" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.9pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>최대변위량/지점간 거리</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="158" height="66" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>주변이 골조</SPAN></P>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>(골조막구조)</SPAN></P>
+	</TD>
+	<TD width="181" height="66" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>주변의 일부가 구조용 케이블 경계(케이블막구조)</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD rowspan="2" width="141" height="46" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>4m 이하</SPAN></P>
+	</TD>
+	<TD width="166" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;적설시</SPAN></P>
+	</TD>
+	<TD width="158" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;1/15 이하</SPAN></P>
+	</TD>
+	<TD width="181" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;1/10 이하 </SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="166" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;폭풍시 하중의 1/2</SPAN></P>
+	</TD>
+	<TD width="158" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;1/20 이하</SPAN></P>
+	</TD>
+	<TD width="181" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;1/10 이하</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD rowspan="2" width="141" height="46" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>4m 초과</SPAN></P>
+	</TD>
+	<TD width="166" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;적설시</SPAN></P>
+	</TD>
+	<TD width="158" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;1/15 이하</SPAN></P>
+	</TD>
+	<TD width="181" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;1/10 이하</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="166" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;폭풍시</SPAN></P>
+	</TD>
+	<TD width="158" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;1/15 이하</SPAN></P>
+	</TD>
+	<TD width="181" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;1/10 이하</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.8.3 막재의 허용인장응력</P>
+
+<P CLASS=HStyle0><SPAN STYLE='letter-spacing:0.2pt;'>막재의 허용인장응력은 접합 등의 상황에 따라서 </SPAN>&lt;표 0901.8.3&gt;에<SPAN STYLE='letter-spacing:0.2pt;'> 따른다.</SPAN></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.8.3&gt; 막재의 허용인장응력</SPAN>
+</P>
+</CAPTION><TR>
+	<TD width="67" height="66" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;</SPAN></P>
+	</TD>
+	<TD colspan="2" width="300" height="66" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>접합상황</SPAN></P>
+	</TD>
+	<TD width="141" height="66" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>장기하중에 대한 허용인장응력</SPAN></P>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>(<IMG src=".\PICF1FD.gif" width="32" height="12" vspace="1" hspace="0" border="0">)</SPAN></P>
+	</TD>
+	<TD width="141" height="66" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>단기하중에 대한 허용인장응력</SPAN></P>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>(<IMG src=".\PICF20E.gif" width="32" height="12" vspace="1" hspace="0" border="0">)</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD rowspan="2" width="67" height="132" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>(1)</SPAN></P>
+	</TD>
+	<TD rowspan="2" width="184" height="132" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>접합부가 없는 경우 또는 접합폭 및 용착폭이 40mm 이상인 경우 </SPAN></P>
+	</TD>
+	<TD width="116" height="66" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>막재가 접히는 부분이 없는 경우</SPAN></P>
+	</TD>
+	<TD width="141" height="66" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";color:#ff0000;'><IMG src=".\PICF21F.gif" width="18" height="30" vspace="1" hspace="0" border="0"></SPAN></P>
+	</TD>
+	<TD width="141" height="66" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";color:#ff0000;'><IMG src=".\PICF220.gif" width="18" height="30" vspace="1" hspace="0" border="0"></SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="116" height="66" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>개폐식 지붕과 같이&nbsp; 막재가 접혀지는 경우</SPAN></P>
+	</TD>
+	<TD width="141" height="66" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";color:#ff0000;'><IMG src=".\PICF230.gif" width="18" height="30" vspace="1" hspace="0" border="0"></SPAN></P>
+	</TD>
+	<TD width="141" height="66" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";color:#ff0000;'><IMG src=".\PICF241.gif" width="18" height="30" vspace="1" hspace="0" border="0"></SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="67" height="40" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>(2)</SPAN></P>
+	</TD>
+	<TD colspan="2" width="300" height="40" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;(1)항 이외의 경우</SPAN></P>
+	</TD>
+	<TD width="141" height="40" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";color:#ff0000;'><IMG src=".\PICF242.gif" width="19" height="30" vspace="1" hspace="0" border="0"></SPAN></P>
+	</TD>
+	<TD width="141" height="40" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";color:#ff0000;'><IMG src=".\PICF252.gif" width="18" height="30" vspace="1" hspace="0" border="0"></SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD colspan="5" width="650" height="45" valign="middle" style='border-left:none;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";letter-spacing:0.8pt;'><IMG src=".\PICF253.gif" width="11" height="13" vspace="1" hspace="0" border="0">&nbsp;: 막재 각 방향의 기준강도(<IMG src=".\PICF264.gif" width="32" height="12" vspace="1" hspace="0" border="0">)</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";letter-spacing:0.8pt;'>다만, 막재 및 막면 정착부 이외의 구조부재는 그 부재와 관련된 관계기준을 따른다. </SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.8.4 정착부의 허용인장응력</P>
+
+<P CLASS=HStyle0>막면 정착부의 허용인장응력은 &lt;표0901.4.2.4&gt;의 허용내력을 막면의 정착부 종류 및 형상에 따라 구한 유효단면적으로 나눈 수치로 하여야한다.</P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.8.4&gt; 정착부의 허용인장응력 </SPAN>
+</P>
+</CAPTION><TR>
+	<TD width="176" height="38" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>장기하중에 대한 인장의 허용내력</SPAN></P>
+	</TD>
+	<TD width="176" height="38" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.9pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>단기하중에 대한 인장력의 허용내력</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="176" height="34" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'><IMG src=".\PICF275.gif" width="18" height="30" vspace="1" hspace="0" border="0"></SPAN></P>
+	</TD>
+	<TD width="176" height="34" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'><IMG src=".\PICF285.gif" width="18" height="30" vspace="1" hspace="0" border="0"></SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD colspan="2" width="352" height="57" valign="middle" style='border-left:none;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:150%;'><SPAN STYLE='font-size:9.0pt;font-family:"한양중고딕,한컴돋움";letter-spacing:0.7pt;line-height:150%;'>&nbsp;</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:150%;'><SPAN STYLE='font-size:9.0pt;font-family:"한양중고딕,한컴돋움";letter-spacing:0.7pt;line-height:150%;'>여기서, <IMG src=".\PICF296.gif" width="14" height="16" vspace="1" hspace="0" border="0">는 실험에 따른 막면 정착부의 최대인장력(단위 N)&nbsp; </SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&nbsp;</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0901.9 케이블구조의 구조해석 </P>
+
+<P CLASS=HStyle4> 0901.9.1 케이블 부재에 대한 해석상 가정</P>
+
+<P CLASS=HStyle0>케이블 부재는 원칙적으로 인장력에만 저항하는 선형 탄성부재로 가정한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.9.2 케이블 부재의 모델링</P>
+
+<P CLASS=HStyle0>구조해석은 경계조건을 포함한 구조모델을 적절히 설정한 후에 수행한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.9.3 초기형상해석</P>
+
+<P CLASS=HStyle0>케이블구조의 형상은 케이블의 장력분포와 깊은 관계가 있으므로 초기형상해석을 수행한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0901.10 케이블구조의 구조설계 </P>
+
+<P CLASS=HStyle0>케이블구조에 대한 설계는 허용응력설계법을 이용하며 또는 허용응력법과 동등 이상의 구조설계법을 이용하여 케이블 또는 그 외의 구조를 병용하는 건축물의 안전을 확인할 수 있는 구조계산이 이루어져야 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.10.1 장기허용인장력</P>
+
+<P CLASS=HStyle0>케이블 재료의 장기허용인장력은 파단하중의 1/3을 기준으로 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.10.2 단기허용인장력</P>
+
+<P CLASS=HStyle0>케이블 재료의 단기허용인장력은 장기허용인장력에 1.33을 곱한 값으로 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.10.3 케이블의 형상 설정</P>
+
+<P CLASS=HStyle0>케이블 구조의 설계 형상은 고정하중에 대해 각 케이블이 목표로 하는 장력(초기장력)상태에서 평형이 되도록 설정한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.10.4 초기장력 설정</P>
+
+<P CLASS=HStyle0>케이블 구조에서 각 케이블의 초기장력은 구조물에 필요한 강성을 확보하고, 외력변화 등에 따른 케이블의 장력손실에 따른 불안정 현상이 발생하지 않도록 설정한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0901.11 설계요구사항</P>
+
+<P CLASS=HStyle4> 0901.11.1 조명설계</P>
+
+<P CLASS=HStyle0>반투명한 막재의 특성을 조명디자인에서 고려한다. 조명설비는 막 표면으로부터 최소 1.0m 떨어져 있어야한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.11.2&nbsp; 배수설계</P>
+
+<P CLASS=HStyle0>배수경사와 위치는 사용상 특성과 일반적인 평면의 요구에 따라 확인하여야한다. 또한 다설지역에서는 낙설 방지대책이 필요하다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.11.3&nbsp; 막재와 구조물과의 이격거리</P>
+
+<P CLASS=HStyle0>막재와 실내외 구조물과의 간격은 가장 불리한 조건을 고려하여 막 표면의 변형길이 보다 두 배 이상 길어야 하고 최소 1.0m로 하여야한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0901.12 막재의 접합부 설계</P>
+
+<P CLASS=HStyle4> 0901.12.1 막재의 접합</P>
+
+<P CLASS=HStyle0>구조내력상 주요한 부분의 막재 상호간 접합은 막재 상호 존재응력이 충분히 전달되도록 접합하여야한다. 막재의 종류에 따른 접합방법은 &lt;표0901.12.1&gt;에 따른다. 다만, &lt;표0901.12.1&gt;의 접합방법 이상으로 막재가 서로 존재응력을 전달하는 것이 가능한 경우는 &lt;표0901.12.1&gt;의 제한을 따르지 않아도 된다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>&lt;표0901.12.1&gt; 막재의 접합방법 </SPAN>
+</P>
+</CAPTION><TR>
+	<TD width="34" height="45" valign="middle" bgcolor="#d6d6d6" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>구분</SPAN></P>
+	</TD>
+	<TD width="79" height="45" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>막재의 종류</SPAN></P>
+	</TD>
+	<TD width="242" height="45" valign="middle" bgcolor="#d6d6d6" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.9pt;border-bottom:none;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>접합방법</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="34" height="23" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양신명조,한컴돋움";'>Ⅰ</SPAN></P>
+	</TD>
+	<TD width="79" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>A&nbsp;</SPAN></P>
+	</TD>
+	<TD width="242" height="23" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:none;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>열판용착접합</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="34" height="45" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양신명조,한컴돋움";'>Ⅱ</SPAN></P>
+	</TD>
+	<TD width="79" height="45" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>B, C</SPAN></P>
+	</TD>
+	<TD width="242" height="45" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>봉제접합, 열풍용착접합, 고주파용착접합 또는 열판용착접합</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="34" height="87" valign="middle" style='border-left:none;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양신명조,한컴돋움";'>Ⅲ</SPAN></P>
+	</TD>
+	<TD width="79" height="87" valign="middle" style='border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;'><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>A, B, C 이외의 막재</SPAN></P>
+	</TD>
+	<TD width="242" height="87" valign="middle" style='border-left:solid #000000 0.4pt;border-right:none;border-top:solid #000000 0.4pt;border-bottom:solid #000000 0.4pt;padding:1.4pt 5.1pt 1.4pt 5.1pt'>
+	<P CLASS=HStyle0><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>막재의 품질 및 사용환경, 그 외의 실황에 따른 실험에 따라 </SPAN><SPAN STYLE='font-family:"한양신명조,한컴돋움";'>Ⅰ</SPAN><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'> 또는 </SPAN><SPAN STYLE='font-family:"한양신명조,한컴돋움";'>Ⅱ</SPAN><SPAN STYLE='font-family:"한양중고딕,한컴돋움";'>와 동등 이상의 존재응력을 전달할 수 있는 접합</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.12.2 접합부 인장강도</P>
+
+<P CLASS=HStyle0>종사방향 및 횡사방향의 접합부 인장강도 평균치는 봉재접합부 인장시험에 이용하였던 막재에서 측정된 모재 초기인장강도의 70% 이상, 그 외의 다른 방법으로 접합된 접합부에 대해서는 같은 방식으로 동일 막재에서 측정된 모재 초기인장강도의 80% 이상으로 한다.</P>
+
+<P CLASS=HStyle4> 0901.12.3 접합부 내박리강도</P>
+
+<P CLASS=HStyle0>종사방향 및 횡사방향 접합부의 내박리강도는 동일 로트 및 동일 접합방법으로 만들어진 시험편으로 접합부 인장시험에 따라 측정된 각 실 방향의 인장강도의 1% 이상이면서, 또한 10N/cm 이상으로 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.12.4 접합부 내인장 크리프</P>
+
+<P CLASS=HStyle0>접합부의 내인장 크리프 특성에 대하여 종사방향 및 횡사방향 신장률의 평균치는 각각 15% 이하로 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.12.5 고온상태에서의 접합부 인장강도</P>
+
+<P CLASS=HStyle0>고온상태에 대한 종사방향 및 횡사방향의 접합부 인장강도 평균치는 초기인장강도의 60% 이상으로 하고, 또한 막재 A종에 대해서는 260℃의 온도에서 200N/cm 이상으로 한다.</P>
+
+<P CLASS=HStyle4> 0901.12.6 습윤상태에서의 접합부 인장강도</P>
+
+<P CLASS=HStyle0>습윤상태에 대한 종사방향 및 횡사방향의 접합부 인장강도 평균치는 초기인장강도의 80% 이상 이어야 한다. </P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0901.12.7 접합부 내후성</P>
+
+<P CLASS=HStyle0>접합부의 폭로실험에 대해서 종사방향 및 횡사방향의 인장강도 평균치는 막재의 종류에 따라 다음의 수치를 만족하여야한다.</P>
+
+<P CLASS=HStyle0>(1) A종 및 B종：각 방향의 인장강도가 접합부 초기인장강도의 70% 이상</P>
+
+<P CLASS=HStyle0>(2) C종：각 방향의 인장강도가 접합부 초기 인장강도의 80% 이상</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle2> 0902 부유식 구조</P>
+
+<P CLASS=HStyle3> 0902.1 일반사항</P>
+
+<P CLASS=HStyle4> 0902.1.1 적용범위</P>
+
+<P CLASS=HStyle0>이 절은 정온수역의 위치에 설치되는 부유식 건물을 대상으로 한다. 이 절은 부유식 건물의 상부 구조와 하부 함체의 해석과 설계 절차에 대한 사항을 기술하며 철근콘크리트와 철골구조, 목구조 등과 같은 설계에 관련된 상세 내용은 이 기준의 해당 장들을 적용한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.1.2 용어설명</P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>건현</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>부유식 구조물의 중앙에서 수면부터 부유식 함체의 상부 슬래브 위까지 수직으로 잰 거리.</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>흘수</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>함체가 떠 있을 때 수면에서 물에 잠긴 함체의 가장 밑 부분까지의 수직 거리</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-family:"돋움";'><BR></SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>계류시설</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>부유구조물이 바람, 유속에 따라 흘러가지 않도록 위치를 고정시키는 시설</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>밸러스트</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>함체의 안정을 유지하기 위해 함체의 바닥에 싣는 물이나 모래 따위의 중량물</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>측벽</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>함체에서 물과 접촉하는 외측벽</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>저면바닥</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>물과 접촉하는 부유식 함체의 바닥면</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-family:"돋움";'><BR></SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>항주파</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>선박이 항해하면서 생기는 파도</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>파랑하중</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>파도에 의해 구조물에 가해지는 하중</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>파압</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>파랑에 따라 함체가 물과 접하는 면에 발생하는 압력</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-family:"돋움";'><BR></SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>부유식 건축물</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>대지 대신에 물 위에 뜨는 함체 위에 지어진 건축물</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>부유식 함체(floating pontoon)</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>자체 부력에 따라 물 위에 뜨는 구조로 된 함체</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>부유식 구조물</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>부유식 함체 위에 설치되는 부유식 건축물을 포함한 구조물의 총칭</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-family:"돋움";'><BR></SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>정온수역</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";font-weight:"bold";'>내수면 </SPAN><SPAN STYLE='font-family:"돋움";'>또는 해수면에서 항시 파고가 1m 이하인 곳을 의미한다.</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;font-weight:"bold";line-height:160%;'>정주형</SPAN><SPAN STYLE='font-size:12.5pt;font-family:"돋움";letter-spacing:-1.0pt;line-height:160%;'>：</SPAN><SPAN STYLE='font-family:"돋움";'>거주용도의 건물을 의미하며, 장기 또는 단기 거주로 구분할 수 있다.</SPAN></P>
+
+<P CLASS=HStyle3> 0902.2 하중</P>
+
+<P CLASS=HStyle4> 0902.2.1 일반사항</P>
+
+<P CLASS=HStyle0>부유식 구조의 설계하중은 제3장 (설계하중)과 구조물의 특수성, <SPAN STYLE='letter-spacing:-1.2pt;'>사용조건, 작용환경 등으로 인한 하중을 적절히 고려하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0><SPAN STYLE='letter-spacing:-1.2pt;'><BR></SPAN></P>
+
+<P CLASS=HStyle4> 0902.2.2 발라스트에 의한 하중</P>
+
+<P CLASS=HStyle0>부유식 구조에 적용된 항구적인 발라스트의 하중은 고정하중으로 고려한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.2.3 부유식 구조의 활하중</P>
+
+<P CLASS=HStyle0>(1) 부유식 건축물에 작용하는 활하중은 이 기준의 0303 활하중을 적용한다.</P>
+
+<P CLASS=HStyle0>(2) 부유식 함체의 건현을 산정하기 위한 활하중은 부유식 구조의 사용에 필요한 소요건현으로 구한다.</P>
+
+<P CLASS=HStyle4> 0902.2.4 정수압과 부력</P>
+
+<P CLASS=HStyle0>부유식 구조의 설계에서는 정수압과 부력의 영향을 고려한다. 정수압과 부력은 유체압(F)의 하중계수를 적용한다.</P>
+
+<P CLASS=HStyle4> 0902.2.5 계류, 견인장치에 의한 하중</P>
+
+<P CLASS=HStyle0>부유식 구조의 계류 또는 견인으로 인한 하중에는 활하중의 하중계수를 적용한다. 계류력에 대해서는 ʻ0902.6의 계류장치ʼ를 참조한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.2.6 환경하중</P>
+
+<P CLASS=HStyle0>(1) 파랑, 해류·조류 등의 유속, 조석, 지진, 지진해일·폭풍해일, 적설, 결빙, 유빙, 빙압, 생물부착 등의 환경하중을 고려하여야 한다.</P>
+
+<P CLASS=HStyle5> 0902.2.6.1 파랑하중</P>
+
+<P CLASS=HStyle0>(1) 설계용 파고 및 주기는 부유식 구조의 설치위치 상황에 따른 파랑변형을 고려하여 설정해야 한다.</P>
+
+<P CLASS=HStyle0>(2) 설계용 파향은 부유식 구조물 또는 그 부재에 가장 불리한 방향을 취하는 것으로 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle5> 0902.2.6.2 해류·조류 등의 유체력</P>
+
+<P CLASS=HStyle0>부유식 구조의 설계에서는 해류·조류 등에 의한 유체력을 고려해야 하며, 작용 유체력은 유향방향의 저항력과 그 직각방향의 양력으로 구분하여 산정한다.</P>
+
+<P CLASS=HStyle5> 0902.2.6.3 지진하중</P>
+
+<P CLASS=HStyle0>부유식 구조의 설계에서는 다음에 제시한 지진의 영향을 고려해야 한다.</P>
+
+<P CLASS=HStyle0>(1) 계류장치를 매개로 해서 작용하는 진동력</P>
+
+<P CLASS=HStyle0>(2) 지진에 의해 발생하는 지진해일</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle5> 0902.2.6.4 적설하중</P>
+
+<P CLASS=HStyle0>강설수역에 설치된 부유식 구조의 설계에 있어서 0304(적설하중)에 규정된 내용을 포함하여 아래에 제시한 적설의 영향을 고려해야 한다.</P>
+
+<P CLASS=HStyle0>(1) 부유식 구조에 중량으로 작용하는 적설</P>
+
+<P CLASS=HStyle0>(2) 부유식 구조에 작용하는 풍하중 등을 증대시키는 적설</P>
+
+<P CLASS=HStyle0>(3) 적설에 의한 부유식 구조의 복원성능에 대한 영향</P>
+
+<P CLASS=HStyle5> 0902.2.6.5 빙하중</P>
+
+<P CLASS=HStyle0>유빙, 결빙 또는 착빙이 발생하는 수역에 설치된 부유식 구조의 설계에서 아래 항목에 제시된 얼음의 영향을 고려해야 한다.</P>
+
+<P CLASS=HStyle0>(1) 해빙의 이동에 따라 작용하는 빙하중</P>
+
+<P CLASS=HStyle0>(2) 결빙에 따른 빙압력</P>
+
+<P CLASS=HStyle0>(3) 착빙에 따른 복원성의 영향</P>
+
+<P CLASS=HStyle0>(4) 표류빙의 충돌</P>
+
+<P CLASS=HStyle5> 0902.2.6.6 생물부착 등</P>
+
+<P CLASS=HStyle0>부유식 구조의 설계에서는 생물부착으로 인한 중량 증가와 증대된 외관치수에 작용하는 파력, 해·조류에 의한 유체력 증대 및 표면조도의 변화에 따른 저항력 증가와 같은 부착생물에 의한 영향을 고려한다.</P>
+
+<P CLASS=HStyle4> 0902.2.7 우발하중</P>
+
+<P CLASS=HStyle0>부유식 구조의 특수성으로 인한 다음과 같은 우발하중이 작용할 수 있으므로, 구조물의 기능과 설계의도에 적합한 우발하중의 유형과 하중규모를 적절히 산정하여야 한다. </P>
+
+<P CLASS=HStyle0>(1) 접안 과정이나 인접 부유식 구조와의 충돌에 의한 충격하중</P>
+
+<P CLASS=HStyle0>(2) 화재, 폭발, 침수, 선박의 충돌 등에 의한 우발하중</P>
+
+<P CLASS=HStyle0>(3) 수상 또는 수중의 쓰레기 침착에 의한 하중 등</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0902.3 재료</P>
+
+<P CLASS=HStyle4> 0902.3.1 일반</P>
+
+<P CLASS=HStyle0>부유식 구조물에 사용되는 재료는 건축구조기준의 콘크리트, 강구조, 목구조 등에서 정의하는 내용을 따르며, 아래의 사항을 추가 적용한다.</P>
+
+<P CLASS=HStyle4> 0902.3.2 재료 강도의 설정</P>
+
+<P CLASS=HStyle0>환경하중 및 목표 내구년수를 고려하여 부유식 구조물에 적절한 콘크리트, 철근 및 강재를 선정하여 사용한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.3.3 콘크리트</P>
+
+<P CLASS=HStyle0>콘크리트는 수·해양 환경에 있어 소요강도 및 내구성을 확보해야 하며, 품질의 편차가 적은 것으로 해야 한다.</P>
+
+<P CLASS=HStyle4> 0902.3.4 철근 및 PC강선</P>
+
+<P CLASS=HStyle0>철근 및 PC강선은 설치되는 수·해양 환경의 조건에 하에서 충분히 안전하고 내구성을 가질 수 있도록 사용 실적을 고려하여 선정한다. 어느 경우에도 KS 규격에 정해진 것 또는 그것과 동등 이상의 것을 사용해야 한다.</P>
+
+<P CLASS=HStyle4> 0902.3.5 강재</P>
+
+<P CLASS=HStyle0>수·해양 건축물에 이용하는 강재는 구조재료 및 구조용 접합재료로 크게 구분할 수 있으며 그 구조물이 설치되는 노출상태 구분에 따라 적절한 방식방법을 고려한 뒤 강도, 인성, 용접성 등에 근거하여 선정한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0902.4 해석</P>
+
+<P CLASS=HStyle4> 0902.4.1 일반사항</P>
+
+<P CLASS=HStyle0>(1) 부유식 구조의 구조해석은 자연 환경조건, 하중조건 및 구조물의 특성을 종합적으로 고려한 적절한 해석 방법에 근거하여야 한다. 해석 방법은 건축구조기준의 해당 설계를 기본으로 하지만 다른 관련 설계 규준, 문헌 등에 준해서 실시하여도 좋다.</P>
+
+<P CLASS=HStyle0>(2) 복잡한 구조물의 경우에는 구조물을 단순화시키거나 축소 모형실험을 통하여 구조물의 거동을 확인하는 것이 바람직하다.</P>
+
+<P CLASS=HStyle0>(3) 함체를 고정하는 계류시설의 해석 및 설계는 0902.6 계류장치의 내용을 따른다.</P>
+
+<P CLASS=HStyle4> 0902.4.2 구조해석시 유의사항</P>
+
+<P CLASS=HStyle0>부유식 구조물의 구조해석시에는 수·해양구조물의 특수성을 고려하여야 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.4.3 정적해석</P>
+
+<P CLASS=HStyle0>(1) 동적하중을 정적하중으로 치환하여, 정적해석에 의해서 구조물의 거동과 단면력을 산정한다.</P>
+
+<P CLASS=HStyle0>(2) 설계요구에 적합한 계산 정확도를 얻을 수 있는 것이면 어떠한 해석방법이든 적용하여도 좋다. 동적해석에 의한 값보다 안전측의 해석결과 값을 제공하여야 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.4.4 동적해석</P>
+
+<P CLASS=HStyle0>(1)정적하중으로 거동을 예측하기 어려운 구조물에 대해서는 동적해석에 따라 구조물의 거동과 단면력을 산정한다.</P>
+
+<P CLASS=HStyle0>(2)동적 해석은 전체적 응답(진동) 해석과 국부 응답(진동) 해석으로 나누어 실시할 수 있다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle3> 0902.5 설계</P>
+
+<P CLASS=HStyle4> 0902.5.1 일반사항</P>
+
+<P CLASS=HStyle0>(1) 부유식 구조의 상부구조물과 하부의 부유식 함체의 설계에 적용한다. 계류장치의 설계는 0902.6을 적용한다.</P>
+
+<P CLASS=HStyle0>(2) 부유식 구조 위의 생명 및 재산에 대하여 위험이 될 만한 손상(부유식 함체의 침몰, 표류 및 파괴)을 일으키지 말아야 한다. </P>
+
+<P CLASS=HStyle0>(3) 부유식 구조를 구성하는 구조물의 일부가 손상됨에 따라 일부가 기능하지 않은 경우에도 부유식 구조 본래의 기능은 상실하지 않아야 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.5.2 하중계수 및 하중조합</P>
+
+<P CLASS=HStyle0>(1) 공칭하중은 3장 및 0902.2에 따른다.</P>
+
+<P CLASS=HStyle0>(2)<SPAN STYLE='letter-spacing:0.9pt;'>부유식 구조물과 구조부재의 소요강도는 강구조의 경우 </SPAN>0702.2.1.2, 철근콘크리트구조의 경우 0503.3.2, 목구조의 경우 0803.1.2의 하중조합 중에서 가장 불리한 경우에 따라 결정하여야 한다. 이 경우, 환경하중에 대한 하중계수는 환경하중에 대한 구조거동과 풍하중(W) 또는 지진하중(E)에 의한 거동이 반대로 작용하는 경우 0으로 한다.</P>
+
+<P CLASS=HStyle4> 0902.5.3 부유식 함체</P>
+
+<P CLASS=HStyle5> 0902.5.3.1 일반사항</P>
+
+<P CLASS=HStyle0>(1) 부유식 함체는 수밀성과 안정성이 먼저 검토된 후에, 예상되는 하중에 대하여 함체시스템의 내력이 확보되고 각 부재별 내력이 만족하도록 설계한다.</P>
+
+<P CLASS=HStyle0>(2) 부유식 함체는 강구조(합성구조), 철근콘크리트구조(프리스트레스트 콘크리트) 및 목구조 등의 적용이 가능하다. 단, 이 기준에서 구체적으로 규정하지 않은 재료에 대해서는 이 기준 0205장에 따라 설계기준강도 및 기계적 성능 등을 확인하여야 한다.</P>
+
+<P CLASS=HStyle0>(3) 수직하중과 예상되는 파랑하중의 다양한 입사각에 대하여 종방향모멘트와 전단력에 저항하도록 설계하여야 한다.</P>
+
+<P CLASS=HStyle0>(4) 수직하중에 따라 발생한 정수압과 파랑하중에 의한 파압에 저항할 수 있도록 부유식 함체의 측벽과 저면바닥을 설계하여야 한다.</P>
+
+<P CLASS=HStyle0>(5) 부유식 함체는 파랑하중 등에 의한 피로항복이 발생하지 않도록 설계하어야 한다.</P>
+
+<P CLASS=HStyle5> 0902.5.3.2 강구조</P>
+
+<P CLASS=HStyle0>(1) 부유식 함체를 강구조(합성구조)로 설계할 경우 제7장의 기준에 추가하여 아래의 규정을 고려하여야 한다. </P>
+
+<P CLASS=HStyle0>(2) 부식에 따라 구조부재의 강도가 저하되는 것을 적절한 방법으로 방지하거나 부식을 허용하도록 설계하여야 한다. 부식을 허용하도록 설계하는 경우 강재의 부식에 의한 강도저하의 영향을 적절한 방법으로 고려하여야 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>(3) 파랑 등의 반복재하에 의한 피로를 고려하여야 한다.</P>
+
+<P CLASS=HStyle0>(4) 두께 계측을 할 수 있도록 모든 구조체에 적절한 접근대책을 제공하도록 설계 및 제작해야 한다.</P>
+
+<P CLASS=HStyle0>(5) 주요구조부재는 적절한 강도의 연속성을 보장할 수 있는 방법으로 배치하여야 한다. 갑작스런 부재 높이 또는 횡단면의 변화를 피해야 한다.</P>
+
+<P CLASS=HStyle0>(6) 8mm를 초과하는 판 두께의 변화는 피해야 하며, 그러한 경우에는 중간 정도 두께의 판으로 전이구역을 두어야 한다. 맞댐용접의 개선은 이 기준에서 정하는 방법에 따라야 한다. 판두께의 국부적인 증가는 주로 필러를 사용한다. 필러는 모재와 같은 항복강도 및 재질의 판을 사용하여야 한다.</P>
+
+<P CLASS=HStyle0>(7) 구조적 불연속이 존재하는 부분에서는 응력집중이 발생할 수 있으며, 그러한 응력집중을 줄이기 위하여 적절한 보강 등의 충분한 주의를 기울여야 한다.</P>
+
+<P CLASS=HStyle0>(8) 2차구조부재가 주요구조부재 위치에서 끝나거나 절단되는 경우 구조적 연속성을 확보하기 위하여 브래킷 또는 보강재를 설치하여야 한다.</P>
+
+<P CLASS=HStyle0>(9) 높은 응력이 발생한 지역은 개구부 설치도 가능한 피해야 한다. 개구부가 배치된 경우 개구부의 모양은 응력집중을 감소시킬 수 있도록 설계하여야 한다. 개구부는 둥글고 테두리가 매끄럽게 시공하여야 한다. 용접연결부는 응력집중부에서 적절히 벗어나도록 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>(10) 강도가 다른 강재를 사용하는 경우 경계부 응력에 주의를 기울여야 하며, 고강도강재의 주요구조부재의 강성과 변형에 의한 보강재의 과도한 응력을 피하기 위한 부재치수를 적절히 고려하여야 한다.</P>
+
+<P CLASS=HStyle5> 0902.5.3.3 철근콘크리트구조</P>
+
+<P CLASS=HStyle0>(1) 부유식 함체를 철근콘크리트구조(프리스트레스트 콘크리트)로 설계할 경우 제5장의 기준에 추가하여 아래의 규정을 고려하여야 한다.</P>
+
+<P CLASS=HStyle0>(2) <SPAN STYLE='letter-spacing:0.9pt;'>해풍, 해수 등에 노출된 부위는 기준0504.5에 따른 내구성 설계를 하여야 한다.</SPAN></P>
+
+<P CLASS=HStyle0>(3) 균열의 영향, 침투성, 표면손상 등을 고려하여 0505.4에서 정하는 최소 피복두께 이상이 되도록 한다.</P>
+
+<P CLASS=HStyle0>(4) 파랑 등의 반복재하에 의한 피로를 고려하여야 한다.</P>
+
+<P CLASS=HStyle0>(5) 철근 부식을 고려하여 에폭시도막철근, 내부식성 철근 등을 사용할 수 있다.</P>
+
+<P CLASS=HStyle0>(6) 주요구조부재는 적절한 강도의 연속성을 보장할 수 있는 방법으로 배치하여야 한다. 갑작스런 부재 높이 또는 횡단면의 변화를 피해야 한다.</P>
+
+<P CLASS=HStyle0>(7) 구조적 불연속이 존재하는 부분에서는 응력집중이 발생할 수 있으며, 그러한 응력집중을 줄이기 위하여 적절한 보강 등의 충분한 주의를 기울여야 한다.</P>
+
+<P CLASS=HStyle0>(8) 철근의 용접이음 및 기계적 연결부는 저온의 영향을 고려하여 실험 등을 통하여 그 성능을 확인하여야 한다.</P>
+
+<P CLASS=HStyle0>(9) 철근의 이음이나 프리스트레스 정착구가 정적허용응력의 50% 이상의 반복인장응력을 받을 경우 이음길이나 프리스트레스 정착길이를 50% 이상 증가시켜야 한다.</P>
+
+<P CLASS=HStyle5> 0902.5.3.4 기타구조</P>
+
+<P CLASS=HStyle0>(1) 부유식 함체를 목구조로 설계할 경우 제8장의 기준 및 0902. 5.1.1 및 0902.5.1.2의 기준을 따른다.</P>
+
+<P CLASS=HStyle0>(2) 이 기준에서 규정하고 있지 않은 기타구조로 설계할 경우 0206에 따라 시스템이나 구조부재 및 접합부 등의 적정성 및 안전성을 검증해야 한다.</P>
+
+<P CLASS=HStyle4> 0902.5.4 상부구조물</P>
+
+<P CLASS=HStyle0>(1) 상부구조물의 설계는 건축구조기준에 따르며 다음의 추가사항을 고려한다.</P>
+
+<P CLASS=HStyle0>(2) 부유식 수·해양구조물은 저주파 진동에 의한 동요 영향이 최소화 되도록 설계한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle0>(3) 부유식 수·해양구조물은 상하부 구조(RC, 프리스트레스, 강재)를 포함하여 사용하중에 의한 과도 처짐으로 비구조재 등의 손상을 유발하여 수·해양구조물의 사용성이 저해되지 않도록 설계한다.</P>
+
+<P CLASS=HStyle3> 0902.6 계류장치</P>
+
+<P CLASS=HStyle4> 0902.6.1 일반</P>
+
+<P CLASS=HStyle0>이 절은 부유식 수·해양구조물을 일정 위치에 고정시키기 위한 계류장치에 대해 적용한다.</P>
+
+<P CLASS=HStyle4> 0902.6.2 계류장치의 종류</P>
+
+<P CLASS=HStyle0>대표적으로 사용되는 계류 장치는 다음과 같은 종류가 있다.</P>
+
+<P CLASS=HStyle5> 0902.6.2.1 체인·와이어 계류장치</P>
+
+<P CLASS=HStyle0>체인 또는 와이어를 함체로부터 해저 또는 하저에 고정된 앵커까지 연결하여 함체의 위치를 고정하는 장치를 말한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle5> 0902.6.2.2 돌핀 계류장치</P>
+
+<P CLASS=HStyle0>수직 강관말뚝이나 중력식 구조물, 자켓 구조물 등을 사용하여 함체에 작용하는 수평외력에 저항함으로써 함체의 위치를 고정하는 장치를 말한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle5> 0902.6.2.3 삼각대 계류장치</P>
+
+<P CLASS=HStyle0>안벽이나 호안 그리고 함체에 각각 고정점을 설치하고 그 사이에 삼각대를 설치하여 함체를 고정하는 장치를 말한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.6.3 계류장치의 선정</P>
+
+<P CLASS=HStyle0>계류장치는 설치장소의 환경조건과 함체의 운영조건 등을 정밀 검토하여 적절히 선정하여야 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.6.4 계류해석</P>
+
+<P CLASS=HStyle0><SPAN STYLE='letter-spacing:0.8pt;'>계류해석을 통해 계류장치에 걸리는 외력을 산정하고 함체의 동요</SPAN>량을 예측하여야 한다. 계류해석시 외력의 적용방향은 계류장치에 최대 하중을 발생시킬 수 있는 방향을 모두 고려하여야 한다.</P>
+
+<P CLASS=HStyle0>체인·와이어 계류장치의 계류해석시는 임의의 한 계류삭이 파단되었을 때 다른 계류삭만으로도 안전한 위치유지가 가능한지에 대한 검토가 이루어져야 한다.</P>
+
+<P CLASS=HStyle0><BR></P>
+
+<P CLASS=HStyle4> 0902.6.5 체인·와이어 계류설계</P>
+
+<P CLASS=HStyle0>체인·와이어 계류설계 시 설치 위치의 바람, 파랑, 조류 등 환경 자료와 수심 측량 및 지반조사 자료, 계류될 함체의 배치도와 상세도, 그리고 함체의 운영 및 유지관리 조건, 주변의 표류물, 선박 운항조건 등을 정밀 검토하여야 한다.</P>
+
+<P CLASS=HStyle0>또한 기존의 해저배관이나 장애물, 난파선, 암초 등이 계류장치에 손상을 입힐 수 있으므로 설계시 주의하여야 한다.</P>
+
+<P CLASS=HStyle4> 0902.6.6 돌핀 계류설계</P>
+
+<P CLASS=HStyle0>돌핀은 계류된 함체에 작용하는 모든 바람, 파랑, 조류 등 환경 외력과 수심, 지반조건, 표류물, 선박 등 주변 조건을 정밀 검토하여 충분히 안전하도록 설계하여야 한다.</P>
+
+<P CLASS=HStyle4> 0902.6.7 삼각대 계류설계</P>
+
+<P CLASS=HStyle0>삼각대와 안벽 및 함체 연결부에 대한 설계시 모든 가능한 함체 동요와 환경 및 인위적 하중조건을 정밀 검토하여 충분히 안전하도록 설계하여야 한다.</P>
+<BR><BR>
+</BODY>
+
+</HTML>

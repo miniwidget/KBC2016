@@ -1,0 +1,807 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+<META NAME="Generator" CONTENT="Haansoft HWP 8.0.0.466">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<TITLE>제2장 구조검사 및 실험</TITLE>
+<STYLE>
+<!--
+P.HStyle0, LI.HStyle0, DIV.HStyle0
+	{style-name:"바탕글"; margin-left:15.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle1, LI.HStyle1, DIV.HStyle1
+	{style-name:"본문"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle2, LI.HStyle2, DIV.HStyle2
+	{style-name:"개요 1"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; background-color:#315f97; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#e5e5e5;}
+P.HStyle3, LI.HStyle3, DIV.HStyle3
+	{style-name:"개요 2"; margin-left:5.0pt; margin-right:0.0pt; margin-top:10.0pt; margin-bottom:10.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"bold"; font-style:"normal"; color:#315f97;}
+P.HStyle4, LI.HStyle4, DIV.HStyle4
+	{style-name:"개요 3"; margin-left:10.0pt; margin-right:0.0pt; margin-top:10.0pt; margin-bottom:10.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"bold"; font-style:"normal"; color:#000000;}
+P.HStyle5, LI.HStyle5, DIV.HStyle5
+	{style-name:"개요 4"; margin-left:15.0pt; margin-right:0.0pt; margin-top:5.0pt; margin-bottom:5.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"bold"; font-style:"normal"; color:#000000;}
+P.HStyle6, LI.HStyle6, DIV.HStyle6
+	{style-name:"개요 5"; margin-left:50.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle7, LI.HStyle7, DIV.HStyle7
+	{style-name:"개요 6"; margin-left:60.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle8, LI.HStyle8, DIV.HStyle8
+	{style-name:"개요 7"; margin-left:70.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle9, LI.HStyle9, DIV.HStyle9
+	{style-name:"쪽 번호"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:160%; font-size:10.0pt; font-family:함초롬돋움; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle10, LI.HStyle10, DIV.HStyle10
+	{style-name:"머리말"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:150%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle11, LI.HStyle11, DIV.HStyle11
+	{style-name:"각주"; margin-left:13.1pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle12, LI.HStyle12, DIV.HStyle12
+	{style-name:"미주"; margin-left:13.1pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:-13.1pt; line-height:130%; font-size:9.0pt; font-family:함초롬바탕; letter-spacing:0.0pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+P.HStyle13, LI.HStyle13, DIV.HStyle13
+	{style-name:"메모"; margin-left:0.0pt; margin-right:0.0pt; margin-top:0.0pt; margin-bottom:0.0pt; text-align:justify; text-indent:0.0pt; line-height:130%; font-size:9.0pt; font-family:함초롬돋움; letter-spacing:0.5pt; font-weight:"normal"; font-style:"normal"; color:#000000;}
+-->
+</STYLE>
+</HEAD>
+
+<BODY>
+
+<P CLASS=HStyle2> 0201 일반사항</P>
+
+<P CLASS=HStyle3> 0201.1 적용범위</P>
+
+<P CLASS=HStyle0>이 장에서는 건축구조물에 사용하는 구조재료의 원자재에 대한 적정한 품질 확보와 제작물에 대한 성능검증을 위한 실험, 구조재료나 제작물의 현장설치, 시공 및 유지관리를 위한 검사, 그리고 이들 검사나 실험에 대한 승인절차 및 대안실험 등에 필요한 사항을 규정한다.</P>
+
+<P CLASS=HStyle3> 0201.2 용어의 정의</P>
+
+<P CLASS=HStyle0>공인시험 검사기관：정기적으로 성능실험과 검사서비스를 수행할 수 있는 전문학술단체 및 국가인정시험 검사기관</P>
+
+<P CLASS=HStyle0>기준지정 외 재료：한국산업표준(KS)에 규격이 제정되어 있으나 이 기준에서 지정하지 않은 재료로서 구조재료로서의 성능 확인이 필요한 재료</P>
+
+<P CLASS=HStyle0>기준지정재료：한국산업표준(KS)에 규격이 제정되어 있고, 이 기준에서 지정한 재료</P>
+
+<P CLASS=HStyle0>성능증명표：제조사가 생산품에 표기한 증명서로서 제조사명, 제품 또는 재료의 기능과 성능 특성, 그리고 그 제품이나 재료의 대표적인 표본에 대한 공인된 기관의 실험과 평가임을 나타내는 공인시험 검사기관의 증명 등을 표기한 것</P>
+
+<P CLASS=HStyle0>신재료：한국산업표준(KS)에 규격이 제정되어 있지 않은 재료</P>
+
+<P CLASS=HStyle0>인증접합부：적정 지진력저항시스템의 접합부로서 성능이 적합하다고 인증한 접합부</P>
+
+<P CLASS=HStyle0>일반검사：건축구조물의 기초나 주요구조부 등 안전상, 방화상, 위생상의 주요 부위에 사용하는 구조재료에 대하여 그 성능을 확인하는 검사</P>
+
+<P CLASS=HStyle0>정기적인 특별검사：자격이 부여된 자가 현장에서 정기적으로 실시하는 검사</P>
+
+<P CLASS=HStyle0>접합부 성능인증실험：적정 지진력저항시스템의 인증접합부로 성능인증을 받기 위해 수행하는 실험</P>
+
+<P CLASS=HStyle0>제작물：부품 또는 제작해서 건축물에 설치하기 위하여 절단, 천공, 용접, 이음, 접합, 냉간작업, 교정과정을 거친 재료들로 구성된 조립품</P>
+
+<P CLASS=HStyle0>지속적인 특별검사：자격이 부여된 자가 현장에 상주하며 지속적으로 실시하는 검사</P>
+
+<P CLASS=HStyle0>특별검사：부품이나 연결 부위의 제작·가설·설치시 적절성을 확보하기 위하여 전문가의 확인이 필요한 검사</P>
+
+<P CLASS=HStyle0>담당원：다음 각목에 규정한 자</P>
+
+<P CLASS=HStyle0>(1) 발주자가 지정한 감독자 및 감독보조원</P>
+
+<P CLASS=HStyle0>(2)건설기술관리 법령에 따라 책임감리할 경우에는 그 법령에 따른 감리원</P>
+
+<P CLASS=HStyle3> 0201.3 주요기호</P>
+
+<P CLASS=HStyle0><IMG src=".\PIC5FFB.gif" width="9" height="13" vspace="1" hspace="0" border="0"><SPAN style='HWP-TAB:1;'>&nbsp;</SPAN>：부재의 전체 두께 또는 깊이, mm</P>
+
+<P CLASS=HStyle0><IMG src=".\PIC601C.gif" width="9" height="16" vspace="1" hspace="0" border="0"><SPAN style='HWP-TAB:1;'>&nbsp;</SPAN>：(1)재하실험에서 부재의 경간으로서 2방향슬래브의 경우 짧은 변, mm</P>
+
+<P CLASS=HStyle0>(2) 받침부의 중심간 길이와 이웃 받침부 사이의 순경간에 부재두께 <IMG src=".\PIC602C.gif" width="9" height="13" vspace="1" hspace="0" border="0">를 합한 길이 중 작은 값, mm</P>
+
+<P CLASS=HStyle0>(3)캔틸레버의 경간은 받침부로부터 캔틸레버 단부까지 거리의 2배, mm</P>
+
+<P CLASS=HStyle0><IMG src=".\PIC604C.gif" width="33" height="16" vspace="1" hspace="0" border="0">：측정된 최대처짐, mm(식(0210.3.1) 참조)</P>
+
+<P CLASS=HStyle0><IMG src=".\PIC605D.gif" width="39" height="16" vspace="1" hspace="0" border="0">：측정된 잔류처짐, mm(식(0210.3.2)와 식(0210.3.3) 참조)</P>
+
+<P CLASS=HStyle0><IMG src=".\PIC606E.gif" width="40" height="16" vspace="1" hspace="0" border="0">：2번째 실험을 시작할 때의 구조물의 위치를 초기값으로 하고, 2번째 시험에 의해 측정된 최대처짐, mm(식(0210.3.3) 참조)</P>
+
+<P CLASS=HStyle2> 0201.4 구조검사</P>
+
+<P CLASS=HStyle3> 0201.4.1 일반사항</P>
+
+<P CLASS=HStyle0>대상구조물이 0201.4.2(내진구조검사) 또는 0201.4.3(내풍구조검사)의 규정에 의한 구조검사 대상인 경우, 건축주는 담당원과 협의하여 구조검사를 수행하여야 한다. 담당원은 구조검사를 시작하기 이전에 구조검사의 내용과 횟수를 확인하고, 검사의 종료 이전에 현장 방문의 내용과 해결하지 못한 결함의 내용 등을 서면으로 제출받아 보관하여야 한다.</P>
+
+<P CLASS=HStyle3> 0201.4.2 내진구조검사</P>
+
+<P CLASS=HStyle0>시공자는 대상구조물이 다음 항목의 어느 하나에 해당하는 경우에는 내진구조검사를 실시하여야 한다.</P>
+
+<P CLASS=HStyle0>(1)건축물의 중요도가 (특) 또는 (1)에 해당하는 구조물 및 건축·기계·전기 설비 등의 비구조요소</P>
+
+<P CLASS=HStyle0>(2) 제진 및 면진시스템</P>
+
+<P CLASS=HStyle0>(3) 구조적 안전성 확보를 위하여 구조설계자가 요청한 경우</P>
+
+<P CLASS=HStyle0>(4) 담당원으로부터 구조검사가 요청된 경우</P>
+
+<P CLASS=HStyle0>(5) 인허가 기관장이 요청한 경우</P>
+
+<P CLASS=HStyle0>단, 다음 어느 하나에 해당하는 구조물은 제외한다.</P>
+
+<P CLASS=HStyle0>(1) 단주기에서 설계응답 스펙트럼 가속도가 0.5g를 넘지 않으면서 구조물 높이가 10m 이하인 경골구조</P>
+
+<P CLASS=HStyle0>(2) 단주기에서 설계응답 스펙트럼 가속도가 0.5g를 넘지 않으면서 구조물의 높이가 7m 이하인 보강조적조 또는 철근콘크리트조로 구성된 내진시스템</P>
+
+<P CLASS=HStyle0>(3) 다음의 수평 또는 수직 비정형이 없는 2층 이하의 1가구 및 2가구 단위의 경량골조 독립주택</P>
+
+<P CLASS=HStyle0>① 비틀림 비정형</P>
+
+<P CLASS=HStyle0>② 비평행 시스템</P>
+
+<P CLASS=HStyle0>③ 강성비정형-연층</P>
+
+<P CLASS=HStyle0>④ 강도의 불연속-약층</P>
+
+<P CLASS=HStyle3> 0201.4.3 내풍 구조검사</P>
+
+<P CLASS=HStyle0>시공자는 대상구조물이 다음 항목의 어느 하나에 해당하는 경우에는 내풍구조검사를 실시하여야 한다.</P>
+
+<P CLASS=HStyle0>(1)기본풍속이 35m/sec를 초과하는 지역에 위치한 건축물 중 높이가 22m 이상인 경우</P>
+
+<P CLASS=HStyle0>(2) 구조적 안전성 확보를 위하여 구조설계자가 요청한 경우</P>
+
+<P CLASS=HStyle0>(3) 담당원이 구조검사를 요청한 경우</P>
+
+<P CLASS=HStyle2> 0202 승인</P>
+
+<P CLASS=HStyle3> 0202.1 서면승인</P>
+
+<P CLASS=HStyle0>시공자는 시공재료, 부품, 장비, 시스템, 설계 및 시공법 등이 이 장의 규정에 적합할 경우 이를 입증하는 실험보고서 및 성능증명서를 담당원에게 제출하여 서면으로 승인받아야 한다.</P>
+
+<P CLASS=HStyle3> 0202.2 승인기록</P>
+
+<P CLASS=HStyle0>담당원이 승인한 시공재료, 부품, 장비, 시스템, 설계 및 시공법 등과 승인조건 및 제약사항을 포함하는 승인기록서는 담당원의 사무실에 서류로 보관하여야 하며, 필요시 공개하여야 한다.</P>
+
+<P CLASS=HStyle3> 0202.3 성능증명 표기</P>
+
+<P CLASS=HStyle0>시공자는 한국산업표준에 따라 제작·제조되지 않은 신재료, 부품, 장비, 시스템, 설계 및 시공법 등에 대하여 이 장에서 규정한 일반검사, 특별검사 및 구조적 적합성 하중실험을 수행한 후에 관련 문서에 성능특성을 표기하여야 한다. </P>
+
+<P CLASS=HStyle2> 0203 일반검사</P>
+
+<P CLASS=HStyle3> 0203.1 일반사항</P>
+
+<P CLASS=HStyle0>(1) 이 절은 건축구조물의 기초 및 주요구조부 등 안전상, 방화상, 위생상 중요한 부위에 사용하는 구조재료에 대하여 구조성능에 대한 품질을 충족하기 위한 확인사항을 규정한다. </P>
+
+<P CLASS=HStyle0>(2) 일반검사의 절차는 (1)항의 구조재료, 공법, 설계방법이 이 기준에서 지정한 재료, 공법, 설계방법인지 여부에 따라 다음의 각 절에 따라야 한다. </P>
+
+<P CLASS=HStyle3> 0203.2 기준지정 재료</P>
+
+<P CLASS=HStyle0>시공자는 0203.1(일반사항)에 정한 부위에 한국산업표준 제품 중에서 이 기준에서 지정한 구조재료를 사용하여야 하며, 한국산업표준에서 정한 시험방법에 따라 재료의 성능을 확인하여야 한다.</P>
+
+<P CLASS=HStyle3> 0203.3 신재료 및 기준지정 외 재료, 공법, 설계방법</P>
+
+<P CLASS=HStyle0>시공자가 0203.1에서 정한 부위에 사용하려는 구조재료, 공법, 설계방법이 0203.2에 따른 기준지정 재료, 공법, 설계방법이 아닌 경우에는 다음 절차에 따라 구조성능을 확인하여야 한다.</P>
+
+<P CLASS=HStyle4> 0203.3.1 적용범위</P>
+
+<P CLASS=HStyle0>0203.1(일반사항)에 정한 부위에 사용하는 신재료 및 기준지정 외 재료, 공법, 설계방법의 종류는 다음과 같다.</P>
+
+<P CLASS=HStyle0>(1) 콘크리트 및 콘크리트 구성재료</P>
+
+<P CLASS=HStyle0>(2) 철근</P>
+
+<P CLASS=HStyle0>(3) 프리캐스트콘크리트</P>
+
+<P CLASS=HStyle0>(4) 구조용 강재 및 주강</P>
+
+<P CLASS=HStyle0>(5) 고력볼트 및 볼트</P>
+
+<P CLASS=HStyle0>(6) 구조용 케이블, 와이어로프와 이와 유사품</P>
+
+<P CLASS=HStyle0>(7) 용접재료(탄소강 및 스테인리스강의 용접)</P>
+
+<P CLASS=HStyle0>(8) 기타 이 기준에 따라 검사 및 실험이 가능한 재료, 공법, 설계방법</P>
+
+<P CLASS=HStyle4> 0203.3.2 승인절차</P>
+
+<P CLASS=HStyle0>(1) 신재료를 사용하기 위해서는 전문학술단체가 승인한 구조성능실험보고서와 사용재료의 품질 확인을 위한 품질기준, 검사 및 정밀도, 품질관리체계 및 그 실태의 구체적인 자료 또는 이와 동등한 내용의 자료를 구비하여야 하며, 건설기술진흥법 제57조 ‘건설자재·부재의 품질관리 등’에 따라 국토교통부장관이 적합하다고 인정하는 경우에 사용할 수 있다.</P>
+
+<P CLASS=HStyle0>(2) 기준지정 외 재료를 사용하기 위해서는 전문학술단체가 승인한 구조성능실험보고서를 구비하여 사용할 수 있다.</P>
+
+<P CLASS=HStyle4> 0203.3.3 구조성능실험보고서</P>
+
+<P CLASS=HStyle0>건축주는 신재료 및 기준지정 외 재료의 적정성을 실증하기 위하여 해당 분야의 연구성과를 보유한 책임구조기술자가 작성한 품질에 관한 기술기준과 해당 구조에 필요한 구조성능을 증명하는 실험 및 조사자료를 제시하여야 한다.</P>
+
+<P CLASS=HStyle4> 0203.3.4 사용재료의 품질 확인</P>
+
+<P CLASS=HStyle0>건축주가 신재료를 사용하기 위해서는 다음과 같은 재료의 품질 확인이 필요하다.</P>
+
+<P CLASS=HStyle5> 0203.3.4.1 품질기준에 따른 확인</P>
+
+<P CLASS=HStyle0>한국산업표준에서 품질기준을 규정하고 있는 경우에는 다음 사항을 확인한다.</P>
+
+<P CLASS=HStyle0>(1) 한국산업표준의 품질기준에 따른 검사항목 확인</P>
+
+<P CLASS=HStyle0>(2) 한국산업표준의 품질 측정방법에 따른 품질 확인</P>
+
+<P CLASS=HStyle0>(3) 한국산업표준의 품질관리기준에 적합한 제조, 운반 및 보관 등의 품질 확인</P>
+
+<P CLASS=HStyle5> 0203.3.4.2 자체 검사기준에 따른 확인</P>
+
+<P CLASS=HStyle0>한국산업표준에서 품질기준을 규정하고 있지 않은 경우에는 다음 사항을 확인한다.</P>
+
+<P CLASS=HStyle0>(1)제작사가 품질관리에 필요한 검사기준을 보유하고 있는지 여부</P>
+
+<P CLASS=HStyle0>(2)검사기준의 검사항목에 정밀도 기준과 성능기준이 포함되어 있는지 여부</P>
+
+<P CLASS=HStyle0>(3) 제작사가 검사기준에 따라 실천하고 있는지 여부</P>
+
+<P CLASS=HStyle5> 0203.3.4.3 품질관리체계의 확인</P>
+
+<P CLASS=HStyle0>(1) 제작사의 규격관리</P>
+
+<P CLASS=HStyle0>제작사의 품질관리체계의 적정성과 그 운영실태에 대하여 다음 사항을 확인한다.</P>
+
+<P CLASS=HStyle0>① 제작사가 해당 규격에 대하여 다음 사항을 적정하게 정비하고 있는지 확인한다.</P>
+
+<P CLASS=HStyle0>·제품의 품질검사 및 보관</P>
+
+<P CLASS=HStyle0>·자재의 품질검사 및 보관</P>
+
+<P CLASS=HStyle0>·공정의 관리항목 및 관리방법, 품질특성, 검사방법, 작업방법</P>
+
+<P CLASS=HStyle0>·제조설비 및 검사설비</P>
+
+<P CLASS=HStyle0>·외주관리</P>
+
+<P CLASS=HStyle0>·부적합 처리</P>
+
+<P CLASS=HStyle0>② 제작사가 해당 규격에 대하여 적정하게 수정·보완하고 사원교육은 잘 실시하는지 확인한다.</P>
+
+<P CLASS=HStyle0>(2) 제품 및 자재의 검사, 보관</P>
+
+<P CLASS=HStyle0>제작사가 제품 및 자재의 검사, 보관을 제작사 자체 기준에 따라 적정하게 시행하고 있는지 여부를 확인한다.</P>
+
+<P CLASS=HStyle0>(3) 공정관리</P>
+
+<P CLASS=HStyle0>제작사가 공정관리를 적정하게 시행하고 있는지 다음 사항에 대하여 확인한다.</P>
+
+<P CLASS=HStyle0>① 제조 및 검사를 공정별로 제작사 자체 기준에 따라 실시하는지 여부, 작업기록, 검사기록, 관리도 등 공정관리</P>
+
+<P CLASS=HStyle0>② 공정 중에 발생한 부적합품 및 불합격 로드의 처리, 공정 중 이상에 대한 대처·재발 방지 방안</P>
+
+<P CLASS=HStyle0>(4) 제조설비 및 검사설비</P>
+
+<P CLASS=HStyle0>제작사가 점검, 검사, 교정, 보수를 제작사 자체 기준에 따라 적정하게 관리하고, 설비의 정도 및 성능을 적정하게 유지하고 있는지 확인한다.</P>
+
+<P CLASS=HStyle0>(5) 외주관리</P>
+
+<P CLASS=HStyle0>제작사가 자체 기준에 따라 적정하게 시행하고 있는지 확인한다.</P>
+
+<P CLASS=HStyle0>(6) 제품, 자재, 공정, 설비의 관리</P>
+
+<P CLASS=HStyle0>제작사가 제품관리, 자재관리, 공정관리, 설비관리, 외주관리, 고충처리에 관한 기록을 필요기간 동안 보존하고 품질관리에 반영하고 있는지 여부를 확인한다.</P>
+
+<P CLASS=HStyle5> 0203.3.4.4 품질관리조직의 운영 확인</P>
+
+<P CLASS=HStyle0>(1) 공정별 품질관리의 계획 및 운영이 적정한지 확인한다.</P>
+
+<P CLASS=HStyle0>(2) 각 조직의 책임, 권한이 명확하고 품질관리책임자를 중심으로 각 조직 간의 유기적 연대를 조성하고 있는지 확인한다.</P>
+
+<P CLASS=HStyle0>(3)품질관리추진을 위한 교육을 계획적으로 시행하고 있는지 확인한다.</P>
+
+<P CLASS=HStyle5> 0203.3.4.5 품질관리책임자의 직무 확인</P>
+
+<P CLASS=HStyle0>품질관리책임자의 직무에 다음 사항을 포함하고 있는지 확인한다.</P>
+
+<P CLASS=HStyle0>(1) 품질관리에 관한 계획 및 추진</P>
+
+<P CLASS=HStyle0>(2) 제작사내 규격 제정, 개정 등의 총괄</P>
+
+<P CLASS=HStyle0>(3) 품질수준의 평가</P>
+
+<P CLASS=HStyle0>(4) 품질관리실시에 관한 지도, 조언, 부서간 조정</P>
+
+<P CLASS=HStyle0>(5) 작업중의 이상, 고충 등의 처리 및 대책에 관한 지도</P>
+
+<P CLASS=HStyle0>(6) 담당자에 대한 품질관리 교육훈련의 추진</P>
+
+<P CLASS=HStyle0>(7) 외주관리에 관한 지도</P>
+
+<P CLASS=HStyle5> 0203.3.4.6 평가와 사후검사</P>
+
+<P CLASS=HStyle0>0202(승인)에 기술한 승인절차 중에 외관검사를 위해 사용승인 신청제품을 사전에 제작하기 어려운 경우, 허가신청자는 유사한 기성제작물이나 타 현장에 사용한 동일 제작품에 대한 보고서를 미리 제출하는 것으로 갈음할 수 있다. 이 보고서에는 제작물에 대한 기술, 제작물의 구성, 실험결과 및 이와 유사한 정보 등을 포함하는 상세내용을 기술하여야 한다.</P>
+
+<P CLASS=HStyle5> 0203.3.4.7 승인기록의 보관 및 공고</P>
+
+<P CLASS=HStyle0>담당원은 승인된 구조재료에 대한 승인조건 및 제약사항을 포함하는 승인기록서를 보관하고 공고하여야 한다.</P>
+
+<P CLASS=HStyle2> 0204 특별검사</P>
+
+<P CLASS=HStyle3> 0204.1 일반사항</P>
+
+<P CLASS=HStyle0>이 절은 부품이나 연결 부위의 제작·가설·설치시 적절성을 확보하기 위하여 전문가의 확인이 필요한 검사를 규정한다.</P>
+
+<P CLASS=HStyle3> 0204.2 강구조</P>
+
+<P CLASS=HStyle0>강구조물에 대한 특별검사는 현장반입 전의 제작공장에서 실시하는 제작검사와 설치현장에서 실시하는 현장검사로 구성한다.</P>
+
+<P CLASS=HStyle4> 0204.2.1 제작검사</P>
+
+<P CLASS=HStyle0>강구조물 제작에 대한 검사는 다음 항목을 실시하고 담당원의 승인을 받아야 한다.</P>
+
+<P CLASS=HStyle5> 0204.2.1.1 제작능력 검사</P>
+
+<P CLASS=HStyle0>제작사의 제작능력 검사는「건설기술진흥법 시행령」제96조 및 같은 영 별표 10 ʻ철강구조물 제작공장 인증의 세부기준 및 절차ʼ에서 정하는 바에 따라 실시하고 적정 여부를 확인하여야 한다. 다만, 해당 구조물의 규모에 따른 제작능력 등급에 적정한 공장으로서「건설기술진흥법」제58조에 의한 철강구조물 제작공장인증의 인증서가 있는 공장에서 제작하는 경우는 예외로 한다.</P>
+
+<P CLASS=HStyle5> 0204.2.1.2 용접부 검사</P>
+
+<P CLASS=HStyle0>용접검사는 ｢강구조 용접부 비파괴검사기준｣에 따라 실시하여야 한다. 용접 검사자는 기타 승인된 과정에 따라 자격이 부여된 자여야 한다.</P>
+
+<P CLASS=HStyle5> 0204.2.1.3 접합상세 검사</P>
+
+<P CLASS=HStyle0>담당원은 승인된 설계도서에 나타난 상세 등에 따라 강골조의 브레이스, 스티프너와 각 접합부에서 접합상세를 적절히 적용했는지, 부재의 위치는 적정한지 등 제작에 대한 적합성을 확인하여야 한다.</P>
+
+<P CLASS=HStyle5> 0204.2.1.4 고력볼트 검사</P>
+
+<P CLASS=HStyle0>작업 중에 담당원은 볼트, 너트, 와셔, 세트, 페인트 및 마찰면 처리, 체결 부위, 그리고 설치 및 조립 등을 설계기준에 적합하게 시공하는지를 판정하여야 한다.</P>
+
+<P CLASS=HStyle5> 0204.2.1.5 평가와 사후검사</P>
+
+<P CLASS=HStyle0>0204.2.1(제작검사)에 따라 제작공장은 담당원에게 실사에 필요한 자료를 제출하여야 하고, 담당원은 제출 자료를 토대로 실사를 하여 적합할 경우 승인한다. 담당원은 공사의 진행에 따라 사후검사 여부를 결정하여 필요한 경우 실시한다.</P>
+
+<P CLASS=HStyle5> 0204.2.1.6 서면승인</P>
+
+<P CLASS=HStyle0>담당원은 0204.2.1(제작검사)에 따른 검사항목에 대하여 실사내용을 기록·보관하고 승인 여부를 서면으로 통보한다.</P>
+
+<P CLASS=HStyle5> 0204.2.1.7 승인기록</P>
+
+<P CLASS=HStyle0>담당원은 0204.2.1(제작검사)에 따라 실사한 결과를 기록하여 공사일지와 함께 기록·보관한다. </P>
+
+<P CLASS=HStyle4> 0204.2.2 현장검사</P>
+
+<P CLASS=HStyle5> 0204.2.2.1 주각부 검사</P>
+
+<P CLASS=HStyle0>시공자는 주각부에 대한 설계도서 및 시방서에 따라 앵커볼트, 베이스 모르타르 및 너트의 조임 등을 적합하게 시공하여야 하며, 담당원은 지속적인 특별검사나 정기적인 특별검사를 하여야 한다.</P>
+
+<P CLASS=HStyle5> 0204.2.2.2 설치계획의 적정성 검사</P>
+
+<P CLASS=HStyle0>시공자는 건축물의 규모, 형상, 대지 및 공정 등의 조건을 근거로 하여 반입방법, 설치순서, 설치기계, 양중방법 등의 설치계획을 수립하고, 설치도중의 부분가구와 설치 후의 전체가구가 고정하중, 활하중, 풍하중, 지진하중, 적설하중, 설치기계의 충격하중 등에 대하여 안전한가를 검토하여 담당원에게 보고서를 제출하고 담당원은 이를 확인하고, 적절한 경우에 승인한다.</P>
+
+<P CLASS=HStyle5> 0204.2.2.3 접합부 검사</P>
+
+<P CLASS=HStyle0>(1) 고력볼트 접합</P>
+
+<P CLASS=HStyle0>시공자는 고력볼트 시공 요령서를 작성하여 담당원의 승인을 받아야 한다.</P>
+
+<P CLASS=HStyle0>(2) 현장용접</P>
+
+<P CLASS=HStyle0>설계도서에서 지시하지 않은 용접방법을 채택하는 경우 시공자는 담당원의 승인을 받아야 한다.</P>
+
+<P CLASS=HStyle5> 0204.2.2.4 데크플레이트와 스터드의 검사</P>
+
+<P CLASS=HStyle0>데크플레이트와 스터드의 용접방법은 담당원의 승인을 받아야 한다.</P>
+
+<P CLASS=HStyle3> 0204.3 콘크리트구조</P>
+
+<P CLASS=HStyle4> 0204.3.1 특별검사의 절차</P>
+
+<P CLASS=HStyle0>콘크리트재료, 구조부재 및 시공에 관한 특별검사는 &lt;표 0204.3.1&gt;와 같이 한국산업표준에 명시된 절차와 제5장(콘크리트구조)의 관련 규정에 준하여 실시한다.</P>
+
+<P CLASS=HStyle4> 0204.3.2. 재료의 품질확인</P>
+
+<P CLASS=HStyle0>재료의 품질이 이 기준과 콘크리트표준시방서에 적합하다는 자료나 서류가 없는 경우, 담당원은 그 재료에 대하여 콘크리트표준시방서나 특기표준시방에 따라 실시한 재료시험 관련 자료나 서류의 제출을 요청할 수 있다.</P>
+
+<P CLASS=HStyle0>
+<TABLE border="1" cellspacing="0" cellpadding="0" style='border-collapse:collapse;border:none;'>
+<CAPTION align="top">
+<P CLASS=HStyle0>&lt;표 0204.3.1&gt; 콘크리트구조의 시공에 대한 특별검사
+</P>
+</CAPTION><TR>
+	<TD width="333" height="26" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.7pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>검사내용</SPAN></P>
+	</TD>
+	<TD width="185" height="26" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.7pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>지속적인</SPAN></P>
+	<P CLASS=HStyle0 STYLE='line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>특별검사</SPAN></P>
+	</TD>
+	<TD width="185" height="26" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.7pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>정기적인</SPAN></P>
+	<P CLASS=HStyle0 STYLE='line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>특별검사</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="333" height="26" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='margin-left:24.3pt;text-indent:-9.3pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>1. 보강철근과 배근 위치에 대한 검사<BR>(예인장텐돈 포함)</SPAN></P>
+	</TD>
+	<TD width="185" height="26" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	</TD>
+	<TD width="185" height="26" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="333" height="42" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>2. 보강철근의 용접검사</SPAN></P>
+	<P CLASS=HStyle0 STYLE='margin-left:34.2pt;text-indent:-19.2pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;&nbsp;&nbsp;1) KS B 0816-KS B 0892의 용접시험방법에 따라서 용접되지 않는 보강용 철근</SPAN></P>
+	<P CLASS=HStyle0 STYLE='margin-left:35.1pt;text-indent:-20.1pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;&nbsp;&nbsp;2)보통 또는 연성모멘트 골조, 그리고 경계요</SPAN><SPAN STYLE='font-size:6.0pt;letter-spacing:0.5pt;line-height:100%;'>소를 갖는 전단벽에서 휨과 축력에 저항하</SPAN><SPAN STYLE='font-size:6.0pt;line-height:100%;'>는 보강철근, 전단보강근</SPAN></P>
+	</TD>
+	<TD width="185" height="42" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	</TD>
+	<TD width="185" height="42" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="333" height="18" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='margin-left:24.7pt;text-indent:-9.7pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>3.배합설계와 일치하는 배합을 사용하는지에 대한 검사</SPAN></P>
+	</TD>
+	<TD width="185" height="18" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	</TD>
+	<TD width="185" height="18" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="333" height="26" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='margin-left:24.7pt;text-indent:-9.7pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>4.슬럼프치와 공기량 측정을 위하여 채취한 굳지않은 콘크리트 시료의 적합성, 강도실험을 위한 콘크리트 제조시 굳지않은 콘크리트의 온도</SPAN></P>
+	</TD>
+	<TD width="185" height="26" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	</TD>
+	<TD width="185" height="26" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="333" height="18" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='margin-left:25.6pt;text-indent:-10.6pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>5. 콘크리트 타설 및 설치 방법의 기술적 적합성에 대한 검사</SPAN></P>
+	</TD>
+	<TD width="185" height="18" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	</TD>
+	<TD width="185" height="18" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="333" height="18" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='margin-left:24.8pt;text-indent:-9.8pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>6.</SPAN><SPAN STYLE='font-size:6.0pt;letter-spacing:0.5pt;line-height:100%;'>양생온도와 양생방법이 적절한지 여부에 대한</SPAN><SPAN STYLE='font-size:6.0pt;line-height:100%;'> 검사</SPAN></P>
+	</TD>
+	<TD width="185" height="18" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	</TD>
+	<TD width="185" height="18" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="333" height="34" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>7. 프리스트레스 콘크리트의 검사</SPAN></P>
+	<P CLASS=HStyle0 STYLE='line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;&nbsp;&nbsp;1) 적용된 예인장력</SPAN></P>
+	<P CLASS=HStyle0 STYLE='margin-left:35.1pt;text-indent:-20.1pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;&nbsp;&nbsp;2)내진구조시스템에 정착된 예인장텐돈의 그라우팅</SPAN></P>
+	</TD>
+	<TD width="185" height="34" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	</TD>
+	<TD width="185" height="34" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="333" height="18" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='margin-left:25.2pt;text-indent:-10.2pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>8. 프리캐스트 콘크리트 부재의 설치에 대한 검사</SPAN></P>
+	</TD>
+	<TD width="185" height="18" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	</TD>
+	<TD width="185" height="18" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.4pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	</TD>
+</TR>
+<TR>
+	<TD width="333" height="26" valign="middle" style='border-left:none;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.7pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='margin-left:24.8pt;text-indent:-9.8pt;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>9.콘크리트에 포스트텐션을 가하기 전, 그리고 보와 슬래브에 설치된 동바리와 거푸집을 제거하기 전 현장타설 콘크리트의 강도검사</SPAN></P>
+	</TD>
+	<TD width="185" height="26" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:solid #5d5d5d 0.4pt;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.7pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>&nbsp;</SPAN></P>
+	</TD>
+	<TD width="185" height="26" valign="middle" style='border-left:solid #5d5d5d 0.4pt;border-right:none;border-top:solid #5d5d5d 0.4pt;border-bottom:solid #5d5d5d 0.7pt;padding:1.4pt 1.4pt 1.4pt 1.4pt'>
+	<P CLASS=HStyle0 STYLE='text-align:center;line-height:100%;'><SPAN STYLE='font-size:6.0pt;line-height:100%;'>○</SPAN></P>
+	</TD>
+</TR>
+</TABLE></P>
+
+<P CLASS=HStyle3> 0204.4 기타 구조</P>
+
+<P CLASS=HStyle4> 0204.4.1 조적조</P>
+
+<P CLASS=HStyle0>조적조시공은 이 기준에서 정의한 입주형태, 건축물의 종류에 따라 제6장(조적식 구조)의 관련 규정을 적용하여 검사하고, 평가하여야 한다.</P>
+
+<P CLASS=HStyle4> 0204.4.2 목구조</P>
+
+<P CLASS=HStyle0>목구조부재의 조립에 관련된 제작공정에 대한 특별검사는 제8장(목구조)에 따른다. </P>
+
+<P CLASS=HStyle4> 0204.4.3 기초</P>
+
+<P CLASS=HStyle5> 0204.4.3.1 말뚝기초</P>
+
+<P CLASS=HStyle0>담당원은 말뚝을 설치하거나 시항타 및 하중실험 등을 실시하는 동안 현장에 상주하여야 한다. 담당원은 모든 말뚝에 관한 설치기록과 하중실험결과치를 작성하고, 건축주에게 이를 제출하여야 한다.</P>
+
+<P CLASS=HStyle5> 0204.4.3.2 피어기초</P>
+
+<P CLASS=HStyle0>건축법령에 따라 내진설계를 해야 하는 건축물의 피어기초는 특별검사를 받아야 한다.</P>
+
+<P CLASS=HStyle2> 0205 지진하중에 대한 특별검사</P>
+
+<P CLASS=HStyle3> 0205.1 일반사항</P>
+
+<P CLASS=HStyle0>이 절은 0201.5.2에 규정한 구조물에 대해 적용한다.</P>
+
+<P CLASS=HStyle3> 0205.2 구조부재</P>
+
+<P CLASS=HStyle0>(1) 구조용 강재에 대한 특별검사는 이 기준의 품질보증 관련조항을 따른다.</P>
+
+<P CLASS=HStyle0>단, 내진설계에 대해 특별한 상세가 언급되지 않고, 반응수정계수가 3 이하인 내진설계범주 C로 분류된 캔틸레버 기둥 시스템을 제외한 구조의 강재는 제외한다.</P>
+
+<P CLASS=HStyle0>(2) 다음 조항에 해당되는 경우 정기적인 특별검사를 수행하여야 한다.</P>
+
+<P CLASS=HStyle0>① 강구조물에서 용접작업</P>
+
+<P CLASS=HStyle0>② 강구조물에서 주요 지진력저항시스템 내의 구성요소들의 스크류 및 고력볼트를 사용한 체결법<BR>단, 냉간성형 강구조에서 다음 중 하나가 적용된 전단벽, 가새, 다이아프램, 버팀재 및 장선 등은 제외한다.</P>
+
+<P CLASS=HStyle0>－피복마감재가 석고보드 또는 섬유판의 경우</P>
+
+<P CLASS=HStyle0>－피복마감재로서 마감재 체결 중심간격이 100mm 이상이면서 전단벽, 전단패널 또는 다이아프램의 한쪽면에서만 목구조 패널 또는 강재 시트가 시공된 경우</P>
+
+<P CLASS=HStyle0>③콘크리트구조물에서 주요 지진력저항시스템의 보강철근과 배근 위치에 대한 검사</P>
+
+<P CLASS=HStyle0>④ 콘크리트구조물에서 보강철근의 용접검사</P>
+
+<P CLASS=HStyle0>－KS B 0816-KS B 0892의 용접시험방법에 따라 용접되지 않은 보강용 철근</P>
+
+<P CLASS=HStyle0>⑤ 목구조물에서 주요 지진력저항시스템 내의 구성요소들의 못접합을 사용한 체결법<BR>단, 판재의 체결 중심간격이 100mm 이상인 내진시스템의 구성성분에 대한 못접합, 기타 철물을 사용한 체결법을 포함한 목재 전단벽, 목재 바닥, 가새, 버팀재(이중깔도리) 및 보막이장선 등은 제외한다.</P>
+
+<P CLASS=HStyle3> 0205.3 비구조요소</P>
+
+<P CLASS=HStyle0>(1)내진성능을 요구하는 비구조요소에서의 지정된 내진시스템을 조사해야 하며, 인증서와 일치하는 라벨, 정착 및 설치를 확인하여야 한다.</P>
+
+<P CLASS=HStyle0>(2) 내진설계범주 D로 분류된 구조물에서 외부 마감재, 내·외부 비내력벽, 내·외부 합판 등의 설치 및 접합에서는 정기적인 특별검사를 수행하여야 한다.</P>
+
+<P CLASS=HStyle0>단, 다음 중 하나에 부합하는 비구조요소는 제외한다.</P>
+
+<P CLASS=HStyle0>① 지면에서 높이 9m 이하인 외부 마감재, 내·외부 비내력벽 및 내·외부 합판</P>
+
+<P CLASS=HStyle0>② 중량이 20N/m2 이하인 외부 마감재 및 내·외부 합판</P>
+
+<P CLASS=HStyle0>③ 중량이 70N/m2 이하인 내부 비내력벽</P>
+
+<P CLASS=HStyle0>(3) 내진설계범주 D로 분류된 구조물에서 접근로 바닥의 설치 시 정기적인 특별검사를 수행하여야 한다.</P>
+
+<P CLASS=HStyle0>(4) 다음의 기계 및 전기 구성요소는 정기적인 특별검사를 수행하여야 한다.</P>
+
+<P CLASS=HStyle0>① 내진설계범주 C 또는 D로 분류된 구조물에서 비상상태 또는 대기전력시스템을 위한 전기설비들의 정착과정</P>
+
+<P CLASS=HStyle0>② 내진설계범주 C 또는 D로 분류된 구조물에서 유해물질 운반을 위해 설계된 배관(파이프) 및 관련 기계장치의 설치와 고정 시</P>
+
+<P CLASS=HStyle0>③ 내진설계범주 C 또는 D로 분류된 구조물에서 유해물질 운반을 위해 설계된 덕트의 설치 및 고정 시 </P>
+
+<P CLASS=HStyle0>④ 내진설계범주 C 또는 D로 분류된 구조물에서 진동격리 시스템의 설치 및 고정 시 </P>
+
+<P CLASS=HStyle0>(5) 면진장치 및 에너지 분산장치의 제조 및 설치 시에는 책임구조기술자가 특별검사를 수행하여야 한다.</P>
+
+<P CLASS=HStyle2> 0206 풍하중에 대한 특별검사</P>
+
+<P CLASS=HStyle3> 0206.1 일반사항</P>
+
+<P CLASS=HStyle0>이 절은 0201.5.3에 규정한 구조물에 대해 적용한다.</P>
+
+<P CLASS=HStyle3> 0206.2 구조부재</P>
+
+<P CLASS=HStyle0>(1) 주요 풍하중저항시스템의 구성요소(전단벽, 가새, 다이아프램, 버팀재 및 장선 등을 포함)들의 접합 작업 및 설치 중에는 특별검사를 수행하여야 한다.</P>
+
+<P CLASS=HStyle0>(2) 다음 조항에 해당되는 경우 정기적인 특별검사를 수행하여야 한다.</P>
+
+<P CLASS=HStyle0>① 강구조물에서 용접작업</P>
+
+<P CLASS=HStyle0>② 강구조물에서 주요 풍하중저항시스템 내의 구성요소들의 스크류 및 고력볼트를 사용한 체결법<BR>단, 냉간성형 강구조에서는 다음 중 하나가 적용된 전단벽, 가새, 다이아프램, 버팀재 및 장선 등은 제외한다.</P>
+
+<P CLASS=HStyle0>－피복마감재가 석고보드 또는 섬유판의 경우 </P>
+
+<P CLASS=HStyle0>－피복마감재로서 마감재 체결 중심간격이 100mm 이상이면서 전단벽, 전단패널 또는 다이아프램의 한쪽면에서만 목구조 패널 또는 강재 시트가 시공된 경우</P>
+
+<P CLASS=HStyle0>③콘크리트구조물에서 주요 풍하중저항시스템의 보강철근과 배근 위치에 대한 검사</P>
+
+<P CLASS=HStyle0>④ 콘크리트구조물에서 보강철근의 용접검사</P>
+
+<P CLASS=HStyle0>－KS B 0816-KS B 0892의 용접시험방법에 따라 용접되지 않은 보강용 철근</P>
+
+<P CLASS=HStyle0>⑤ 목구조물에서 주요 풍하중저항시스템 내의 구성요소들의 접합을 사용한 체결법<BR>단, 판재의 체결 중심간격이 100mm 이상인 풍하중저항시스템의 구성 성분에 대한 못접합, 기타 철물을 사용한 체결법을 포함한 목재 전단벽, 목재 바닥, 가새, 버팀재(이중깔도리) 및 보막이장선 등은 제외한다. </P>
+
+<P CLASS=HStyle0>(3) 다음 조항에 해당되는 경우 지속적인 특별검사를 수행하여야 한다.</P>
+
+<P CLASS=HStyle0>① 콘크리트구조물에서 보강철근의 용접검사</P>
+
+<P CLASS=HStyle0>&nbsp;&nbsp;－보통 또는 연성모멘트 골조, 그리고 경계요소를 갖는 전단벽에서 휨과 축력에 저항하는 보강철근, 전단보강근</P>
+
+<P CLASS=HStyle0>② 목구조물에서 주요 풍하중저항시스템 내의 구성요소들의 현장접합작업</P>
+
+<P CLASS=HStyle3> 0206.3 비구조요소</P>
+
+<P CLASS=HStyle0>다음 비구조시스템 및 구성 성분들에 대해 정기적인 특별검사가 필요하다.</P>
+
+<P CLASS=HStyle0>(1) 지붕마감재의 설치 및 접합</P>
+
+<P CLASS=HStyle0>① 직접적으로 풍하중의 영향을 받는 지붕마감재 </P>
+
+<P CLASS=HStyle0>② 지붕마감재로부터 풍하중이 전달되거나 직접풍하중을 받는 비구조요소(트러스, 지붕 시트, 시트 정착물, 전단벽, 외부 조적조, 콘크리트조, 목구조 스터드 접합 등)</P>
+
+<P CLASS=HStyle0>(2) 커튼월, 창문, 문 등과 같은 벽체 마감재의 설치 및 접합 </P>
+
+<P CLASS=HStyle2> 0207 재료의 강도</P>
+
+<P CLASS=HStyle3> 0207.1 사용재료의 적합성</P>
+
+<P CLASS=HStyle0>건축주는 기초 및 주요구조부 등 안전상 중요한 부위에 사용하는 구조재료가 설계 시에 적용한 설계기준강도 및 기계적 성능과 일치하는지를 확인하여야 한다.</P>
+
+<P CLASS=HStyle3> 0207.2 신재료</P>
+
+<P CLASS=HStyle0>이 기준에서 구체적으로 규정하지 않은 재료에 대하여는 ʻʻ0203(일반검사)ʼʼ 및 ʻʻ0211(대안실험)ʼʼ에서 규정한 절차에 따라 설계강도와 허용응력값을 결정하여야 한다.</P>
+
+<P CLASS=HStyle2> 0208 내진성능 구조실험</P>
+
+<P CLASS=HStyle3> 0208.1 일반사항</P>
+
+<P CLASS=HStyle0>지진하중에 대한 특별검사가 필요한 경우 중요도(특) 및 중요도(1)로 분류되는 구조물에서 내진시스템은 0209.2에서 0209.5까지의 기술내용에 따른다.</P>
+
+<P CLASS=HStyle3> 0208.2 철근</P>
+
+<P CLASS=HStyle0>시공자는 내진구조에 사용할 철근에 대한 공인시험서를 제출하여야 하며, 또한 철근을 용접하는 경우에는 철근의 용접성을 증명할 수 있는 화학성분 실험을 실시하여야 한다.</P>
+
+<P CLASS=HStyle3> 0208.3 구조용 강재</P>
+
+<P CLASS=HStyle0>내진구조에 사용되는 구조용 강재의 성능실험은 제7장(강구조)의 품질보증 관련조항을 따른다.</P>
+
+<P CLASS=HStyle3> 0208.4 비구조요소의 내진성능</P>
+
+<P CLASS=HStyle0>건축, 기계 및 전기설비 등 비구조요소의 내진성능 검증에 필요한 사항은 책임구조기술자가 정하는 바에 따른다.</P>
+
+<P CLASS=HStyle3> 0208.5 면진·제진시스템</P>
+
+<P CLASS=HStyle0>면진·제진시스템에 대한 실험은 책임구조기술자가 정하는 바에 따른다. </P>
+
+<P CLASS=HStyle2> 0209 구조적 적합성 하중실험</P>
+
+<P CLASS=HStyle3> 0209.1 일반사항</P>
+
+<P CLASS=HStyle0>시공자는 이 기준으로 검토할 수 없는 설계 및 시공법을 사용하거나 이 기준으로 구조물의 특성을 평가할 수 없는 경우 시공자는 시공 전에 하중실험을 실시하여 구조적 적합성을 확인하여야 한다. 책임구조기술자는 실험결과를 구조설계에 반영하여야 한다.</P>
+
+<P CLASS=HStyle3> 0209.2 설계기준 하중실험</P>
+
+<P CLASS=HStyle0>하중실험 절차와 하중계수, 설계기준강도 및 기계적 성능은 제3장(설계하중)의 관련조항을 적용한다. 다만, 적절한 관련 조항이 없는 경우에는 0209.3에 따른 특별 하중실험을 실시하여 내력 및 성능을 확인할 수 있다.</P>
+
+<P CLASS=HStyle3> 0209.3 특별 하중실험</P>
+
+<P CLASS=HStyle0>하중실험 절차를 명시한 관련 규정이 없을 경우 0210에 준한 재하실험에 의하여 구조부재와 구조체에 대한 내력을 확인한다.</P>
+
+<P CLASS=HStyle3> 0209.4 시험체</P>
+
+<P CLASS=HStyle0>시공 전 하중실험을 위한 시험체 및 시험구조물의 제작은 실제와 동일하도록 하되 책임구조기술자가 승인한 재료, 형상 및 상세에 따라야 한다. 시험은 공인시험검사기관에서 실시하여야 한다.</P>
+
+<P CLASS=HStyle2> 0210 현장재하실험</P>
+
+<P CLASS=HStyle3> 0210.1 일반사항</P>
+
+<P CLASS=HStyle0>(1) 건축물의 책임구조기술자는 시공자가 해당 구조체 전체 또는 일부를 설계도서대로 시공하지 않았거나 시공품질의 저하로 인하여 예상하중에 대한 구조체의 안전성이 의심스러울 경우 이에 대한 구조적 평가를 건축주에 요청할 수 있다. 구조적 평가 결과, 구조체의 보유내력이 기준에서 정한 내력에 미달할 경우에 건축주는 이 절에서 규정한 현장재하실험을 실시하여 건축물의 구조적 안전성을 확인하여야 하며 해당 건축물이나 공작물이 시공중인 경우 건축주는 즉시 시공을 중단하고 이를 시정하여야 한다.</P>
+
+<P CLASS=HStyle0>(2) 사용중인 건축물의 실제 내하력을 정량화하여 안전성을 평가하기 위한 경우에도 이 절에서 규정하는 현장재하실험을 사용할 수 있다.</P>
+
+<P CLASS=HStyle0>(3) 책임구조기술자는 현장재하실험 전에 재하하중, 계측, 시험조건, 수치해석 등을 포함한 현장재하실험 계획을 수립하여야 하며, 현장재하실험은 시험기간 중 과도한 영구변형이나 붕괴가 발생하지 않도록 계획하여 인명과 구조물의 안전을 확보할 수 있는 방식으로 수행하여야 한다.</P>
+
+<P CLASS=HStyle0>(4) 안전을 위한 조치는 현장재하실험에 지장이 있거나 실험결과에 영향을 주지 않도록 하여야 한다.</P>
+
+<P CLASS=HStyle3> 0210.2 실험기준</P>
+
+<P CLASS=HStyle0>구조체와 구조부재 및 접합부는 적절한 실험기준에 따라 실험하여야 한다. 콘크리트구조 및 강구조에 대한 현장재하실험은 책임구조기술자의 감독하에 0210.3 및 0210.4에 준하여 실시한다. 이 절에서 규정하는 실험기준이 없는 경우에는 실험방법 및 절차를 계획하여 책임구조기술자의 확인을 받아야 한다. </P>
+
+<P CLASS=HStyle3> 0210.3 콘크리트구조의 재하실험</P>
+
+<P CLASS=HStyle0>재하시험 대상 구조물 또는 부재의 재료가 충분히 설계강도에 도달할 수 있는 재령일이 확보된 이후에 수행하여야 한다. 구조물의 일부분만을 재하할 경우, 내하력이 의심스러운 부분의 예상 취약원인을 충분히 확인할 수 있는 적합한 방법으로 실시하여야 한다.</P>
+
+<P CLASS=HStyle0>(1) 재하시험방법은 다음의 사항을 따른다.</P>
+
+<P CLASS=HStyle0>① 재하할 보의 경간이나 슬래브 패널의 수와 하중배치는 강도가 의심스러운 구조부재의 위험단면에서 최대응력과 처짐이 발생하도록 결정하여야 한다. 만약 하나의 하중배열로 구조물의 적합성을 나타내는데 필요한 효과(처짐, 비틀림, 응력 등)들의 최대값을 나타내지 못한다면 1종류 이상의 시험하중의 배열을 사용하여야 한다.</P>
+
+<P CLASS=HStyle0>② 재하할 시험하중은 해당 구조 부분에 작용하고 있는 고정하중을 포함하여 설계하중의 85%, 즉 0.85(1.2<IMG src=".\PIC609E.gif" width="12" height="13" vspace="1" hspace="0" border="0">＋1.6<IMG src=".\PIC60AE.gif" width="10" height="13" vspace="1" hspace="0" border="0">) 이상이어야 한다. 활하중 <IMG src=".\PIC60BF.gif" width="10" height="13" vspace="1" hspace="0" border="0">의 결정은 해당 구조물의 관련기준에 규정된 대로 활하중감소율 등을 적용시켜 허용범위 내에서 감소시킬 수 있다.</P>
+
+<P CLASS=HStyle0>(2) 재하기준은 다음의 사항을 따른다.</P>
+
+<P CLASS=HStyle0>① 처짐, 회전각, 변형률, 미끄러짐, 균열폭 등 측정값의 기준이 되는 영점 확인은 시험하중의 재하 직전 1시간 이내에 최초 읽기를 시행하여야 한다. 측정값은 최대응답이 예상되는 위치에서 얻어야 하며, 추가적인 측정값은 필요에 따라 구할 수 있다.</P>
+
+<P CLASS=HStyle0>② 등분포시험하중은 재하되는 구조물이나 구조부재에 등분포하중을 충분히 전달할 수 있는 방법으로 적용시켜야 한다. 시험대상 부재에 하중이 불균등하게 전달되는 아치현상은 피하여야 한다.</P>
+
+<P CLASS=HStyle0>③ 시험하중은 4회 이상 균등하게 나누어 증가시켜야 하며, 응답측정값은 각 하중단계에서 하중이 가해진 직후, 그리고 시험하중이 적어도 24시간 동안 구조물에 작용된 후에 읽어야 한다.</P>
+
+<P CLASS=HStyle0>④ 전체 시험하중은 최종단계의 모든 측정값을 얻은 직후에 제거하며 최종잔류측정값은 시험하중이 제거된 후 24시간이 경과하였을 때 읽어야 한다.</P>
+
+<P CLASS=HStyle0>(3) 재하시험의 허용기준은 다음의 사항을 따른다.</P>
+
+<P CLASS=HStyle0>① 시험할 구조물은 파괴의 징후인 균열·박리 혹은 구조물의 안정성에 영향을 줄 수 있는 과대한 처짐 등이 없어야 한다. 압축된 콘크리트의 박리나 파쇄는 파괴의 징후로 볼 수 있다. 한편, 균열폭은 구조물의 상태 판단에 좋은 자료로서 전체 시험체 균열폭의 변화 및 새로 발생된 균열의 평가를 위한 근사적인 한계 및 기준 등을 확정하는 것이 바람직하다.</P>
+
+<P CLASS=HStyle0>② 측정된 최대처짐이 다음 조건 중 하나를 만족하여야 한다.</P>
+
+<P CLASS=HStyle0><IMG src=".\PIC60CF.gif" width="34" height="16" vspace="0" hspace="0" border="0">&nbsp;≦ <IMG src=".\PIC60E0.gif" width="56" height="36" vspace="0" hspace="0" border="0"><SPAN style='HWP-TAB:1;'>&nbsp;&nbsp;&nbsp;</SPAN>(0210.3.1)</P>
+
+<P CLASS=HStyle0><IMG src=".\PIC60F1.gif" width="40" height="16" vspace="0" hspace="0" border="0">&nbsp;≦ <IMG src=".\PIC6101.gif" width="41" height="33" vspace="0" hspace="0" border="0"><SPAN style='HWP-TAB:1;'>&nbsp;</SPAN>(0210.3.2)</P>
+
+<P CLASS=HStyle0>측정된 최대처짐과 잔류처짐이 식(0210.3.1)이나 식(0210. 3.2)를 만족하지 않을 때 재하시험을 반복할 수 있다. 반복시험은 처음 시험하중 제거 후 72시간이 경과한 후에 다시 시행할 수 있다. 이때 재시험한 구조물의 해당 부분의 회복이 다음 조건을 만족할 때 수용할 수 있다.</P>
+
+<P CLASS=HStyle0><IMG src=".\PIC6102.gif" width="40" height="16" vspace="0" hspace="0" border="0">&nbsp;≦ <IMG src=".\PIC6113.gif" width="47" height="33" vspace="0" hspace="0" border="0"><SPAN style='HWP-TAB:1;'>&nbsp;</SPAN>(0210.3.3)</P>
+
+<P CLASS=HStyle0>③ 실험할 구조부재는 스터럽 철근의 항복 혹은 일체성을 상실할 정도의 정착손실 등 갑작스러운 전단파괴의 가능성을 예시하는 균열이 없어야 한다.</P>
+
+<P CLASS=HStyle0>④ 횡방향 철근이 없는 구조부재의 부분에서 부재축에 경사지게 균열이 발생하고, 균열의 중간점 위치에서 균열의 수평투영길이가 부재의 깊이보다 길면서 부재축에 대하여 사인장으로 구조적 균열이 예상되면 취성파괴의 위험성을 갖고 있으므로 반드시 검토하여야 한다.</P>
+
+<P CLASS=HStyle0>⑤ 정착영역과 겹침이음영역에서 철근축을 따라 발생하는 균열은 철근과 콘크리트 사이의 힘 전달에 따른 높은 응력에 의하여 발생한다. 따라서 정착과 철근이음의 영역에서 일련의 짧은 경사균열과 수평균열이 철근을 따라 발생하면 이러한 균열은 반드시 검토되어야 한다.</P>
+
+<P CLASS=HStyle0>(4) 시험대상구조물이 판정기준을 만족하지 않는 경우 책임구조기술자는 재하시험 또는 해석의 결과에 따라서 제한된 낮은 내하력 범위 내에서 구조물을 사용하도록 제한할 수 있다.</P>
+
+<P CLASS=HStyle3> 0210.4 강구조의 재하실험</P>
+
+<P CLASS=HStyle0>강구조의 재하실험에 의한 내하력 결정은 다음 (1)에서 (4)에 따르며, 사용성 평가는 (5)에 따른다.</P>
+
+<P CLASS=HStyle0>(1) 기존의 바닥이나 지붕구조물의 내하력을 실험에 의해 결정할 경우, 시험하중은 책임구조기술사의 계획에 따라 점진적으로 증가시켜야 한다. 각 하중단계마다 구조물의 손상 정도와 붕괴 가능성에 대하여 정밀하게 외관조사를 수행하도록 한다. 이와 유사하거나 또는 비상상황이 발생하면 적절한 조치가 취해져야 한다.</P>
+
+<P CLASS=HStyle0>(2) 구조물의 실험강도는 최고재하하중에 현장에서 확인된 고정하중을 더한 값으로 한다. 바닥구조물의 활하중에 대한 내하력은 실험강도를 1.2<IMG src=".\PIC6124.gif" width="12" height="13" vspace="1" hspace="0" border="0">＋1.6<IMG src=".\PIC6125.gif" width="10" height="13" vspace="1" hspace="0" border="0">에 등치시켜서 산정한다. (여기서 <IMG src=".\PIC6135.gif" width="12" height="13" vspace="1" hspace="0" border="0">는 그 구조물의 공칭고정하중, <IMG src=".\PIC6136.gif" width="10" height="13" vspace="1" hspace="0" border="0">은 공칭활하중을 의미한다). 바닥구조의 공칭활하중은 적용 가능한 하중기준을 기초로 계산된 값을 초과해서는 안 된다. 지붕구조에 대해서는 <IMG src=".\PIC6147.gif" width="10" height="13" vspace="1" hspace="0" border="0"> 대신에 <IMG src=".\PIC6148.gif" width="15" height="16" vspace="1" hspace="0" border="0">, <IMG src=".\PIC6158.gif" width="9" height="13" vspace="1" hspace="0" border="0"> 또는 <IMG src=".\PIC6159.gif" width="11" height="13" vspace="1" hspace="0" border="0"> 등으로 대치해서 평가한다.</P>
+
+<P CLASS=HStyle0>(3) 사용하중 수준을 초과하는 구조물의 비탄성거동이 확인되면 영구변형과 비탄성변형의 크기를 기록하기 위해 주기적으로 제하하도록 한다. 시험의 전체 과정을 통하여 구조물의 변위는 재하 이전의 초기 구조물 위치를 기준으로 위험 위치에서 모니터링한다. 최대 시험하중이 1시간 유지되는 동안, 변형은 가력의 초기값보다 10% 이상 증가되지 않음이 입증되어야 한다. 기존 구조물의 내하력이 적합함을 입증하기 위해서 필요하다면 위의 과정을 반복할 수 있다.</P>
+
+<P CLASS=HStyle0>(4) 영구변형의 크기를 결정하기 위해 실험하중을 제거한 이후 24시간 동안의 구조물 변형 역시 기록하여야 한다. 허용 가능한 영구변형의 크기는 구조형식에 따라 변동하므로 최대하중에 대한 영구변형에 대한 제한값을 이 조항에서는 적시하지 않는다. 전체구조물을 대상으로 한 재하실험이 부적절한 경우는 적어도 1개 스팬 이상으로 이루어진 가장 불리한 부분구조를 선정하여 이 실험을 수행한다.</P>
+
+<P CLASS=HStyle0>(5) 재하실험에 의한 사용성 평가를 수행할 때, 점진적 재하를 통하여 사용하중에 이르도록 한다. 1시간 동안 변형을 관찰토록 한 후, 하중을 제거하고 변형을 기록한다.</P>
+
+<P CLASS=HStyle3> 0210.5 말뚝재하실험</P>
+
+<P CLASS=HStyle0>말뚝재하시험에는 압축재하, 인발재하, 횡방향재하시험이 있으며, 다음 사항을 고려하여 계획한다.</P>
+
+<P CLASS=HStyle0>(1) 말뚝재하시험을 실시하는 방법으로는 정재하시험방법 또는 동재하시험방법을 고려할 수 있으며 설계지지력이 수천 톤에 이르는 현장타설말뚝의 경우에는 양방향 재하시험방법을 고려할 수 있다.</P>
+
+<P CLASS=HStyle0>(2) 말뚝재하시험의 목적은 다음과 같다.</P>
+
+<P CLASS=HStyle0>① 지지력 확인</P>
+
+<P CLASS=HStyle0>② 변위량 추정</P>
+
+<P CLASS=HStyle0>③ 건전도 확인</P>
+
+<P CLASS=HStyle0>④ 시공방법과 장비의 적합성</P>
+
+<P CLASS=HStyle0>⑤ 시간경과에 따른 말뚝지지력 변화</P>
+
+<P CLASS=HStyle0>⑥ 부주면 마찰력</P>
+
+<P CLASS=HStyle0>⑦ 하중전이 특성</P>
+
+<P CLASS=HStyle0>(3) 압축정재하시험의 수량은 지반조건에 큰 변화가 없는 경우 말뚝 250개당 1회 또는 구조물별로 1회 실시하도록 한다.</P>
+
+<P CLASS=HStyle0>(4) 시공 중 동재하시험(EOID, End of Initial Driving Test)의 수량은 지반조건에 큰 변화가 없는 경우 전체 말뚝 개수의 1% 이상을 실시하며 100개 미만인 경우에도 최소 1개를 실시하도록 한다.</P>
+
+<P CLASS=HStyle0>(5) 시간경과 효과 확인을 위한 재항타 동재하시험(Restrike Test)을 실시하며, 빈도는 (4)항과 동일하다.</P>
+
+<P CLASS=HStyle2> 0211 대안실험</P>
+
+<P CLASS=HStyle3> 0211.1 일반사항</P>
+
+<P CLASS=HStyle0>시공자는 인증된 기준이 없는 새로운 재료나 조립품을 적용할 경우에 필요한 실험과 조사의 기준을 제시하고, 그 품질과 사용법에 대한 공인시험검사기관의 보고서를 구비하여야 한다.</P>
+
+<P CLASS=HStyle3> 0211.2 실험기준</P>
+
+<P CLASS=HStyle0>설계에서 채택한 공법과 설계방법이 이 기준과 일치하지 않을 경우, 공법에 관련한 시스템이나 구조부재 및 접합부 등은 이 절에서 규정한 대안실험을 수행하여 적정성 및 안전성을 검증하여야 한다.</P>
+
+<P CLASS=HStyle3> 0211.3 실험절차</P>
+
+<P CLASS=HStyle0>대안실험은 0203(일반검사) 및 0204(특별검사) 절차에 따른다.</P>
+
+<P CLASS=HStyle0><BR></P>
+<BR><BR>
+</BODY>
+
+</HTML>
